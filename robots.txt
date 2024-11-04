@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://mister-hope.github.io/personalweb/sitemap.xml
+Sitemap: https://crc011220.github.io/personalweb/personalweb/sitemap.xml
