@@ -1,2 +1,2 @@
 # personalweb
-Richard's personal website
+Richard's personal website/blog
