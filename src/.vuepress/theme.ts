@@ -88,12 +88,12 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: "学海无涯",
 
       displayFooter: true,
 
       blog: {
-        description: "一个前端开发者",
+        description: "墨尔本大学计算机在读学生",
         intro: "/zh/intro.html",
       },
 
@@ -102,6 +102,8 @@ export default hopeTheme({
         editLink: "在 GitHub 上编辑此页",
       },
     },
+
+
   },
 
   encrypt: {
@@ -173,6 +175,9 @@ export default hopeTheme({
       sup: true,
       tasklist: true,
       vPre: true,
+
+
+
 
       // install chart.js before enabling it
       // chart: true,
@@ -263,5 +268,7 @@ export default hopeTheme({
     // revealjs: {
     //   plugins: ["highlight", "math", "search", "notes", "zoom"],
     // },
+
+
   },
 });
