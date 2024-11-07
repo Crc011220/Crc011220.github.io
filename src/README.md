@@ -9,26 +9,26 @@ bgImageDark: https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?
 heroText: Discover Richard Chen's Personal Journey
 tagline: Sharing Insights on Tech, Life, and Creativity
 heroFullScreen: true
-#projects:
-#  - icon: project
-#    name: project name
-#    desc: project detailed description
-#    link: https://your.project.link
-#
-#  - icon: link
-#    name: link name
-#    desc: link detailed description
-#    link: https://link.address
-#
-#  - icon: book
-#    name: book name
-#    desc: Detailed description of the book
-#    link: https://link.to.your.book
-#
-#  - icon: article
-#    name: article name
-#    desc: Detailed description of the article
-#    link: https://link.to.your.article
+projects:
+  - icon: project
+    name: Dkd
+    desc: A vending machine management system
+    link: https://github.com/Crc011220/dkd
+
+  - icon: project
+    name: Blog
+    desc: Richard Chen's Blog
+    link: https://github.com/Crc011220/personalweb
+
+  - icon: book
+    name: book name
+    desc: Detailed description of the book
+    link: https://link.to.your.book
+
+  - icon: article
+    name: article name
+    desc: Detailed description of the article
+    link: https://link.to.your.article
 #
 #  - icon: friend
 #    name: friend name
