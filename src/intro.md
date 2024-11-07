@@ -51,7 +51,7 @@ _Aug 2020 - Dec 2023_
 _Jul 2024 - Nov 2024_  
 - Developed a portal to boost appearance and functionality of Payment Forms deploying Salesforce Experience Cloud Platform.
 - Self-training and receiving mentoring to become proficient in Salesforce. Solving day-to-day cases and contributing to the Knowledgebase and App content.
-- Enhanced user experience and increased visual appeal by 30% across multiple online platforms by using Figma, resulting in a 20% increase in user engagement.
+- Enhanced user experience and increased visual appeal by 30% across multiple online platforms by using Figma and Statamic, resulting in a 20% increase in user engagement.
 - Developed a user-friendly web application using JavaScript that automates calculations for user inputs and exports results, achieving a 50% improvement in calculation efficiency.
 - Conducted batch analysis of user inputs using Python, leading to significant enhancements in the existing knowledge base and resulting in a 70% increase in efficiency.
 

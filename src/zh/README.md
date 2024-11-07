@@ -3,10 +3,12 @@ home: true
 layout: BlogHome
 icon: home
 title: 主页
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: 中文版博客暂未上线
+heroImage: https://mister-hope.com/logo.svg
+bgImage: https://images.pexels.com/photos/547115/pexels-photo-547115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+bgImageDark: https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+heroText: 探索若尘的个人历程
+tagline: 分享关于技术、生活与创意的见解
 heroFullScreen: true
-tagline: 敬请期待
 #projects:
 #  - icon: project
 #    name: 项目名称

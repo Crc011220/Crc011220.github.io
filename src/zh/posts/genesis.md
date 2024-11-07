@@ -1,10 +1,11 @@
 ---
 icon: pen-to-square
-date: 2024-11-03
+date: 2024-11-02
 category:
   - 开始
 tag:
   - 旅程
+sticky: true
 ---
 
 # 开始
