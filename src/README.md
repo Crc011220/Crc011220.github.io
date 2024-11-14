@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: home
 title: Richard Chen's Blog
-heroImage: https://mister-hope.com/logo.svg
+heroImage: https://em-content.zobj.net/source/apple/391/thinking-face_1f914.png
 bgImage: https://images.pexels.com/photos/547115/pexels-photo-547115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 bgImageDark: https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 heroText: Discover Richard Chen's Personal Journey
@@ -20,15 +20,15 @@ projects:
     desc: Richard Chen's Blog
     link: https://github.com/Crc011220/personalweb
 
-  - icon: book
-    name: book name
-    desc: Detailed description of the book
-    link: https://link.to.your.book
-
-  - icon: article
-    name: article name
-    desc: Detailed description of the article
-    link: https://link.to.your.article
+#  - icon: book
+#    name: book name
+#    desc: Detailed description of the book
+#    link: https://link.to.your.book
+#
+#  - icon: article
+#    name: article name
+#    desc: Detailed description of the article
+#    link: https://link.to.your.article
 #
 #  - icon: friend
 #    name: friend name

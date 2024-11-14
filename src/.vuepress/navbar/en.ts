@@ -30,6 +30,7 @@ export const enNavbar = navbar([
         children: [
           { text: "Concepts", icon: "pen-to-square", link: "concepts/1" },
           { text: "Practices", icon: "pen-to-square", link: "practices/1" },
+          { text: "MicroSvc", icon: "pen-to-square", link: "microsvc/1"}
         ],
       },
       {
