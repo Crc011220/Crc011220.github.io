@@ -71,13 +71,11 @@ _Nov 2023 - Feb 2024_
 ### Vending Machine Management System  
 *Sep 2024 – Oct 2024*  
 *Technologies*: Spring Boot, Vue, Element-Plus, MyBatis, Redis  
-- Developed back-end features: Node Management, Device Management, Product Management, and Work Order Management
-- Built front-end modules: Operations Management, Device Screen Interface, and Order Management
 - Integrated Amazon S3 for efficient storage and management of static assets, enabling scalable and secure handling of project resources
 - Optimized database operations with MyBatis, supporting high-volume transactions efficiently
 - Implemented Redis caching for login authentication to improve performance and reduce database load, ensuring faster and more efficient user verification
 - Utilized Spring Security framework for secure authentication, ensuring that data access is restricted to authorized roles only, thereby enhancing application security and data integrity
-- Deployed projects on Linux using Docker and leveraged Ngrok for tunneling, enabling public access to the application from a local environment
+- Using the Velocity template engine to generate basic CRUD code, which improved development efficiency by 50%
 
 ### User Sharing Platform  
 *Jun 2024 - Jul 2024*  

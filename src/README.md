@@ -20,7 +20,7 @@ projects:
     desc: Richard Chen's Blog
     link: https://github.com/Crc011220/personalweb
 
-#  - icon: book
+#  - icon: project
 #    name: book name
 #    desc: Detailed description of the book
 #    link: https://link.to.your.book
