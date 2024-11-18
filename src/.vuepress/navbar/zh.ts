@@ -11,7 +11,7 @@ export const zhNavbar = navbar([
   //     {
   //       text: "力扣",
   //       icon: "pen-to-square",
-  //       prefix: "leetcode/",
+  //       prefix: "algorithm/",
   //       children: [
   //         { text: "力扣 第一题", icon: "pen-to-square", link: "1" },
   //       ],

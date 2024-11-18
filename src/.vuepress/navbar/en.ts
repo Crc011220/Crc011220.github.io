@@ -24,6 +24,14 @@ export const enNavbar = navbar([
         ],
       },
       {
+        text: "Interview",
+        icon: "pen-to-square",
+        prefix: "interview/",
+        children: [
+          { text: "Interview", icon: "pen-to-square", link: "1" },
+        ],
+      },
+      {
         text: "Kubernetes",
         icon: "pen-to-square",
         prefix: "kubernetes/",
@@ -34,11 +42,11 @@ export const enNavbar = navbar([
         ],
       },
       {
-        text: "LeetCode",
+        text: "Algorithm",
         icon: "pen-to-square",
-        prefix: "leetcode/",
+        prefix: "algorithm/",
         children: [
-          { text: "LeetCode", icon: "pen-to-square", link: "1" },
+          { text: "Algorithm", icon: "pen-to-square", link: "1" },
         ],
       },
       {

@@ -213,8 +213,8 @@ export default hopeTheme({
     //   cacheHTML: true,
     //   cacheImage: true,
     //   appendBase: true,
-    //   leetcode: {
-    //     icon: "/assets/icon/leetcode-icon-152.png",
+    //   algorithm: {
+    //     icon: "/assets/icon/algorithm-icon-152.png",
     //     statusBarColor: "black",
     //   },
     //   msTile: {
