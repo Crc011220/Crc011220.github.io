@@ -8,6 +8,14 @@ export const enNavbar = navbar([
     prefix: "/posts/",
     children: [
       {
+        text: "Algorithm",
+        icon: "pen-to-square",
+        prefix: "algorithm/",
+        children: [
+          { text: "Algorithm", icon: "pen-to-square", link: "1" },
+        ],
+      },
+      {
         text: "AWS-SAA",
         icon: "pen-to-square",
         prefix: "aws-saa/",
@@ -39,14 +47,6 @@ export const enNavbar = navbar([
           { text: "Concepts", icon: "pen-to-square", link: "concepts/1" },
           { text: "Practices", icon: "pen-to-square", link: "practices/1" },
           { text: "MicroSvc", icon: "pen-to-square", link: "microsvc/1"}
-        ],
-      },
-      {
-        text: "Algorithm",
-        icon: "pen-to-square",
-        prefix: "algorithm/",
-        children: [
-          { text: "Algorithm", icon: "pen-to-square", link: "1" },
         ],
       },
       {
