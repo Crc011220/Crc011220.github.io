@@ -32,6 +32,14 @@ export const enNavbar = navbar([
         ],
       },
       {
+        text: "ElasticSearch",
+        icon: "pen-to-square",
+        prefix: "elasticsearch/",
+        children: [
+          { text: "ElasticSearch", icon: "pen-to-square", link: "1" },
+        ],
+      },
+      {
         text: "Interview",
         icon: "pen-to-square",
         prefix: "interview/",
@@ -47,6 +55,14 @@ export const enNavbar = navbar([
           { text: "Concepts", icon: "pen-to-square", link: "concepts/1" },
           { text: "Practices", icon: "pen-to-square", link: "practices/1" },
           { text: "MicroSvc", icon: "pen-to-square", link: "microsvc/1"}
+        ],
+      },
+      {
+        text: "MyBatis",
+        icon: "pen-to-square",
+        prefix: "mybatis/",
+        children: [
+          { text: "MyBatis", icon: "pen-to-square", link: "1" },
         ],
       },
       {

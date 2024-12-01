@@ -21,15 +21,15 @@ export default defineUserConfig({
 
   theme,
 
-  head: [
-    [
-      "script",
-      {
-        src: "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js",
-        async: true,
-      },
-    ],
-  ],
+  // head: [
+    // [
+    //   "script",
+    //   {
+    //     src: "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js",
+    //     async: true,
+    //   },
+    // ],
+  // ],
 
   plugins: [
     docsearchPlugin({
