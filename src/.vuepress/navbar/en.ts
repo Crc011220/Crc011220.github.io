@@ -32,6 +32,14 @@ export const enNavbar = navbar([
         ],
       },
       {
+        text: "China Merchant Bank",
+        icon: "pen-to-square",
+        prefix: "cmb/",
+        children: [
+          { text: "China Merchant Bank", icon: "pen-to-square", link: "1" },
+        ],
+      },
+      {
         text: "ElasticSearch",
         icon: "pen-to-square",
         prefix: "elasticsearch/",
