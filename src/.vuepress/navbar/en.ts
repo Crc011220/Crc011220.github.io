@@ -74,6 +74,14 @@ export const enNavbar = navbar([
         ],
       },
       {
+        text: "NextJS",
+        icon: "pen-to-square",
+        prefix: "nextjs/",
+        children: [
+          { text: "NextJS", icon: "pen-to-square", link: "1" },
+        ],
+      },
+      {
         text: "Swen90016",
         icon: "pen-to-square",
         prefix: "swen90016/",
