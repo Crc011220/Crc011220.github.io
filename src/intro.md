@@ -6,6 +6,7 @@ category:
   - Genesis
 tag:
   - Resume
+star: true
 sticky: true
 ---
 
