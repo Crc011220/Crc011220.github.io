@@ -89,5 +89,13 @@ export const enNavbar = navbar([
           { text: "Swen90016", icon: "pen-to-square", link: "1" },
         ],
       },
+      {
+        text: "Typescript",
+        icon: "pen-to-square",
+        prefix: "typescript/",
+        children: [
+          { text: "Typescript", icon: "pen-to-square", link: "1" },
+        ],
+      },
     ]}
 ]);
