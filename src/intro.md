@@ -49,9 +49,14 @@ _Aug 2020 - Dec 2023_
 
 ### Full Stack Development Intern
 *China Merchants Bank, Hangzhou, Zhejiang*  
-_Nov 2024 - Feb 2025_ 
+_Nov 2024 - Feb 2025_
+<br>_Nov 2023 - Feb 2024_  
 - Developed and optimized an Auto-Complete interface for system configuration by using Spring Boot and MyBatis, cutting maintenance costs by 50% and reducing runtime by 1.5 minute  
 - Encapsulated a common notice API by using Spring Boot and MyBatis, including email, app, and SMS notification with functions such as queues, database logger, and custom configuration,
+- Completed writing documentation for APIs, resulting in a 30% reduction in review time and a 20% increase in accuracy of API implementation based on feedback from colleagues
+- Implemented and optimized Excel data import/export functionality in a Spring Boot and Vue.js environment, creating tailored RESTful APIs for advanced data manipulation, leading to a 30% increase in data management efficiency and productivity
+- Executed high-volume stress testing using JMeter on datasets exceeding 100,000 records, ensuring API response times remained within five seconds to validate application performance and reliability
+- Mastered and deployed Selenium and Scrapy for automated data scraping, achieving daily targets from multiple sources, enhancing data accuracy by 25%, and ensuring seamless project continuity
 
 ### Junior IT All Rounder  
 *AAkonsult PTY LTD, Melbourne, Victoria*  
@@ -61,14 +66,6 @@ _Jul 2024 - Nov 2024_
 - Enhanced user experience and increased visual appeal by 30% across multiple online platforms by using Figma and Statamic, resulting in a 20% increase in user engagement
 - Developed a user-friendly web application using JavaScript that automates calculations for user inputs and exports results, achieving a 50% improvement in calculation efficiency
 - Conducted batch analysis of user inputs using Python, leading to significant enhancements in the existing knowledge base and resulting in a 70% increase in efficiency
-
-### Full Stack Development Intern  
-*China Merchants Bank, Hangzhou, Zhejiang*  
-_Nov 2023 - Feb 2024_  
-- Completed writing documentation for APIs, resulting in a 30% reduction in review time and a 20% increase in accuracy of API implementation based on feedback from colleagues
-- Implemented and optimized Excel data import/export functionality in a Spring Boot and Vue.js environment, creating tailored RESTful APIs for advanced data manipulation, leading to a 30% increase in data management efficiency and productivity
-- Executed high-volume stress testing using JMeter on datasets exceeding 100,000 records, ensuring API response times remained within five seconds to validate application performance and reliability
-- Mastered and deployed Selenium and Scrapy for automated data scraping, achieving daily targets from multiple sources, enhancing data accuracy by 25%, and ensuring seamless project continuity
 
 ---
 
@@ -102,7 +99,7 @@ _Nov 2023 - Feb 2024_
 - Implemented Redis caching for login authentication to improve performance and reduce database load, ensuring faster and more efficient user verification
 - Utilized Spring Security framework for secure authentication, ensuring that data access is restricted to authorized roles only, thereby enhancing application security and data integrity
 - Using the Velocity template engine to generate basic CRUD code, which improved development efficiency by 50%
-
+- Containerized the project using DockerFile and Kubernetes and deployed on a virtual machine, enabling successful local access through Docker networking and port mapping
 ---
 
 ## OTHER SKILLS AND INTERESTS
