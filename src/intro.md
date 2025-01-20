@@ -49,19 +49,20 @@ _Aug 2020 - Dec 2023_
 
 ### Full Stack Development Intern
 *China Merchants Bank, Hangzhou, Zhejiang*  
-_Nov 2024 - Feb 2025_
-<br>_Nov 2023 - Feb 2024_  
-- Developed and optimized an Auto-Complete interface for system configuration by using Spring Boot and MyBatis, cutting maintenance costs by 50% and reducing runtime by 1.5 minute  
-- Encapsulated a common notice API by using Spring Boot and MyBatis, including email, app, and SMS notification with functions such as queues, database logger, and custom configuration,
-- Completed writing documentation for APIs, resulting in a 30% reduction in review time and a 20% increase in accuracy of API implementation based on feedback from colleagues
-- Implemented and optimized Excel data import/export functionality in a Spring Boot and Vue.js environment, creating tailored RESTful APIs for advanced data manipulation, leading to a 30% increase in data management efficiency and productivity
-- Executed high-volume stress testing using JMeter on datasets exceeding 100,000 records, ensuring API response times remained within five seconds to validate application performance and reliability
+_Nov 2024 - Feb 2025_<br>
+_Nov 2023 - Feb 2024_  
+- Implemented and optimized Excel data import and export functionality in a Spring Boot and Vue.js environment, creating tailored RESTful APIs for advanced data manipulation, led to a 50% increase in data management efficiency and productivity
 - Mastered and deployed Selenium and Scrapy for automated data scraping, achieving daily targets from multiple sources, enhancing data accuracy by 25%, and ensuring seamless project continuity
+- Developed and optimized an Auto-Complete interface for system configuration by using Spring Boot and MyBatis, cutting maintenance costs by 50% and reducing runtime by 1.5 minute 
+- Encapsulated a notification API with Spring Boot and MyBatis for internal emails, app messages, and SMS. Features like queue management and custom configurations improved colleague productivity by 40%
+- •	Implemented an automated document security check API with Spring Boot and XCode, an internal low code platform, reducing manual checks and cutting security check times by 75%
+- Learned and Applied prompt engineering to create a document generation robot on internal AI market that automates the creation of detailed design documents, increasing documentation efficiency by 60%
+- Gained hands-on experience with internal cloud native management platforms and CI/CD pipelines, participating in the deployment of various interface projects, ensuring smooth integration and delivery
 
 ### Junior IT All Rounder  
 *AAkonsult PTY LTD, Melbourne, Victoria*  
 _Jul 2024 - Nov 2024_  
-- Developed a portal to boost appearance and functionality of Payment Forms deploying Salesforce Experience Cloud Platform.
+- Developed a portal to boost appearance and functionality of Payment Forms deploying Salesforce Experience Cloud Platform by using CSS3.
 - Self-training and receiving mentoring to become proficient in Salesforce. Solving day-to-day cases and contributing to the Knowledgebase and App content
 - Enhanced user experience and increased visual appeal by 30% across multiple online platforms by using Figma and Statamic, resulting in a 20% increase in user engagement
 - Developed a user-friendly web application using JavaScript that automates calculations for user inputs and exports results, achieving a 50% improvement in calculation efficiency
@@ -85,7 +86,7 @@ _Jul 2024 - Nov 2024_
 
 ### User Sharing Platform  
 *Jun 2024 - Jul 2024*  
-*Technologies*: Node.js, Express.js, React, MongoDB  
+*Technologies*: Node.js, Express.js, React.js, MongoDB  
 - Developed a responsive and interactive user interface with React, enhancing user experience and accessibility across various devices
 - Utilized MongoDB to store user data and shared addresses, ensuring efficient data retrieval and storage
 - Created RESTful APIs with Node.js and Express.js to handle user requests and data processing, ensuring seamless communication between frontend and backend
@@ -106,7 +107,7 @@ _Jul 2024 - Nov 2024_
 
 - **Languages**: English, Mandarin
 - **Office Software**: Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Outlook
-- **UI/UX Design**: Figma
+- **Tools**: AWS, SalesForce, Figma, Xmind, Draw.io, Trello
 - **Interests**: Fitness, Chess, Saxophone, Basketball, Calligraphy
 
 ---
