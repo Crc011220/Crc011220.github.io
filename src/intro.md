@@ -55,7 +55,7 @@ _Nov 2023 - Feb 2024_
 - Mastered and deployed Selenium and Scrapy for automated data scraping, achieving daily targets from multiple sources, enhancing data accuracy by 25%, and ensuring seamless project continuity
 - Developed and optimized an Auto-Complete interface for system configuration by using Spring Boot and MyBatis, cutting maintenance costs by 50% and reducing runtime by 1.5 minute 
 - Encapsulated a notification API with Spring Boot and MyBatis for internal emails, app messages, and SMS. Features like queue management and custom configurations improved colleague productivity by 40%
-- •	Implemented an automated document security check API with Spring Boot and XCode, an internal low code platform, reducing manual checks and cutting security check times by 75%
+- Implemented an automated document security check API with Spring Boot and XCode, an internal low code platform, reducing manual checks and cutting security check times by 75%
 - Learned and Applied prompt engineering to create a document generation robot on internal AI market that automates the creation of detailed design documents, increasing documentation efficiency by 60%
 - Gained hands-on experience with internal cloud native management platforms and CI/CD pipelines, participating in the deployment of various interface projects, ensuring smooth integration and delivery
 
@@ -97,7 +97,7 @@ _Jul 2024 - Nov 2024_
 *Technologies*: Spring Boot, Vue, Element-Plus, MyBatis, Redis  
 - Integrated Amazon S3 for efficient storage and management of static assets, enabling scalable and secure handling of project resources
 - Optimized database operations with MyBatis, supporting high-volume transactions efficiently
-- Implemented Redis caching for login authentication to improve performance and reduce database load, ensuring faster and more efficient user verification
+- Implemented Redis caching for token to improve performance and reduce database load, ensuring faster and more efficient user verification
 - Utilized Spring Security framework for secure authentication, ensuring that data access is restricted to authorized roles only, thereby enhancing application security and data integrity
 - Using the Velocity template engine to generate basic CRUD code, which improved development efficiency by 50%
 - Containerized the project using DockerFile and Kubernetes and deployed on a virtual machine, enabling successful local access through Docker networking and port mapping
