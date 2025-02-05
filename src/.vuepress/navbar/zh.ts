@@ -2,25 +2,30 @@ import { navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
   "/zh/",
-  // "/zh/demo/",
-  // {
-  //   text: "博文",
-  //   icon: "pen-to-square",
-  //   prefix: "/zh/posts/",
-  //   children: [
-  //     {
-  //       text: "力扣",
-  //       icon: "pen-to-square",
-  //       prefix: "algorithm/",
-  //       children: [
-  //         { text: "力扣 第一题", icon: "pen-to-square", link: "1" },
-  //       ],
-  //     },
-  //   ],
-  // },
-  // {
-  //   text: "V2 文档",
-  //   icon: "book",
-  //   link: "https://theme-hope.vuejs.press/zh/",
-  // },
+  {
+    text: "笔记",
+    icon: "pen-to-square",
+    prefix: "/zh/posts/",
+    children: [
+      {
+        text: "Java8特性",
+        icon: "pen-to-square",
+        prefix: "java8/",
+        children: [
+          { text: "函数式编程", icon: "pen-to-square", link: "函数式编程" },
+        ],
+      },
+      {
+        text: "Netty",
+        icon: "pen-to-square",
+        prefix: "netty/",
+        children: [
+          { text: "Nio介绍", icon: "pen-to-square", link: "Netty01-nio" },
+          { text: "Netty入门", icon: "pen-to-square", link: "Netty02-intro" },
+          { text: "Netty进阶", icon: "pen-to-square", link: "Netty03-进阶" },
+          { text: "Netty优化", icon: "pen-to-square", link: "Netty04-优化与源码" },
+        ],
+      },
+    ],
+  }
 ]);

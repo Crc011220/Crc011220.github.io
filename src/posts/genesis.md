@@ -8,7 +8,7 @@ sticky: true
 
 # Genesis
 
-Welcome to my blog! This is where my journey into the world of programming begins :tada:
+Welcome to my blog! This is where my journey to start recording the world of programming begins :tada:
 
 ## Purpose of This Blog
 
