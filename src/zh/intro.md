@@ -7,6 +7,8 @@ category:
 tag:
   - 简历
 sticky: true
+star: true
+
 ---
 
 # 关于我

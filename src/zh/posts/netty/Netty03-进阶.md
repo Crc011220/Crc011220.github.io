@@ -2,9 +2,9 @@
 icon: pen-to-square
 date: 2025-01-29
 category:
-  - Internship journal
+  - 学习笔记
 tag:
-  - China Merchant Bank
+  - netty
 ---
 
 # 三. Netty 进阶

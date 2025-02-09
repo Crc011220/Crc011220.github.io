@@ -2,9 +2,9 @@
 icon: pen-to-square
 date: 2025-01-20
 category:
-  - Internship journal
+  - 学习笔记
 tag:
-  - China Merchant Bank
+  - nio
 ---
 
 # 一. NIO 基础
