@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: home
 title: 主页
-heroImage: https://mister-hope.com/logo.svg
+heroImage: https://em-content.zobj.net/source/apple/391/thinking-face_1f914.png
 bgImage: https://images.pexels.com/photos/547115/pexels-photo-547115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 bgImageDark: https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 heroText: 探索若尘的个人历程
