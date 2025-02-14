@@ -12,7 +12,7 @@ heroFullScreen: true
 projects:
   - icon: project
     name: Dkd
-    desc: A vending machine management system
+    desc: A Vending Machine Management System
     link: https://github.com/Crc011220/dkd
 
   - icon: project
@@ -20,10 +20,10 @@ projects:
     desc: Richard Chen's Blog
     link: https://github.com/Crc011220/personalweb
 
-#  - icon: project
-#    name: book name
-#    desc: Detailed description of the book
-#    link: https://link.to.your.book
+ - icon: project
+   name: Rpc
+   desc: A Lightweight Remote Procedure Call Framework
+   link: https://github.com/Crc011220/RPC
 #
 #  - icon: article
 #    name: article name
