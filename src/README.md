@@ -20,10 +20,10 @@ projects:
     desc: Richard Chen's Blog
     link: https://github.com/Crc011220/personalweb
 
- - icon: project
-   name: Rpc
-   desc: A Lightweight Remote Procedure Call Framework
-   link: https://github.com/Crc011220/RPC
+  - icon: project
+    name: Rpc
+    desc: A Lightweight Remote Procedure Call Framework
+    link: https://github.com/Crc011220/RPC
 #
 #  - icon: article
 #    name: article name
