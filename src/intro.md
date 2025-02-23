@@ -34,14 +34,11 @@ _Aug 2020 - Dec 2023_
 ---
 
 ## TECHNICAL SKILLS
-
 - **Programming Languages**: **Java**, Python, C#, JavaScript, TypeScript, SQL, R
 - **Frameworks**: **Spring Boot**, Spring Cloud, Django, MyBatis, Node.js, Express.js, Next.js, Vue.js, WordPress
+- **Middleware**: RabbitMQ, Kafka, NGINX
 - **Databases**: MySQL, PostgreSQL, Redis, Elasticsearch, MongoDB
-- **Development Tools**: Git, Docker, Kubernetes
-- **Web Testing**: Postman, JMeter, Swagger, Selenium
-- **Message Queues**: RabbitMQ, Kafka
-- **Operating System**: Linux (CentOS, Ubuntu)
+- **Development Tools**: Git, Docker, Kubernetes, Linux, Postman, JMeter, Swagger, Selenium
 - **Certifications**: AWS Cloud Practitioner, AWS Solution Architect Associate
 ---
 
@@ -71,6 +68,16 @@ _Jul 2024 - Nov 2024_
 ---
 
 ## PROJECT EXPERIENCES
+
+### Lightweight Remote Procedure Call Framework
+*Jan 2025 - Mar 2025*
+*Technologies*: Java, Netty, Zookeeper, Redis
+- Developed an RPC framework utilizing dynamic proxies to enable transparent service invocation, simplifying interactions between clients and servers
+- Enhanced network communication efficiency by replacing traditional blocking I/O with Netty's non-blocking I/O (NIO) capabilities
+- Designed a custom RPC protocol supporting multiple serialization strategies (e.g. Java IO, JSON) to increase data transmission flexibility and efficiency
+- Integrated with Zookeeper for service discovery and automatic registration, ensuring high system availability
+- Implemented multiple load balancing algorithms (e.g. Random, Round-Robin) to distribute traffic across service providers, enhancing system throughput
+- Introduced Redis caching to reduce the load on Zookeeper, further improving system performance
 
 ### E-commerce Platform  
 *Aug 2024 - Nov 2024*  

@@ -80,6 +80,15 @@ export const enNavbar = navbar([
         ],
       },
       {
+        text: "Dubbo",
+        icon: "pen-to-square",
+        prefix: "dubbo/",
+        children: [
+          { text: "Concepts in Distributed Systems", icon: "pen-to-square", link: "1" },
+          { text: "Dubbo Architecture", icon: "pen-to-square", link: "2" },
+        ],
+      },
+      {
         text: "ElasticSearch",
         icon: "pen-to-square",
         prefix: "elasticsearch/",
