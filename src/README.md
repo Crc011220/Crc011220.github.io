@@ -25,10 +25,10 @@ projects:
     desc: A Lightweight Remote Procedure Call Framework
     link: https://github.com/Crc011220/RPC
 
-  - icon: article
-    name: article name
-    desc: Detailed description of the article
-    link: https://link.to.your.article
+  # - icon: article
+  #   name: article name
+  #   desc: Detailed description of the article
+  #   link: https://link.to.your.article
 #
 #  - icon: friend
 #    name: friend name

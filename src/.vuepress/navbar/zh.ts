@@ -26,6 +26,14 @@ export const zhNavbar = navbar([
           { text: "Netty优化", icon: "pen-to-square", link: "Netty04-优化与源码" },
         ],
       },
+      {
+        text: "NGINX",
+        icon: "pen-to-square",
+        prefix: "nginx/",
+        children: [
+          { text: "NGINX 高级", icon: "pen-to-square", link: "1" },
+        ],
+      },
     ],
   }
 ]);

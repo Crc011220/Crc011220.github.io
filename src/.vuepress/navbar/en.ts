@@ -147,6 +147,15 @@ export const enNavbar = navbar([
         ],
       },
       {
+        text: "NGINX",
+        icon: "pen-to-square",
+        prefix: "nginx/",
+        children: [
+          { text: "Basic", icon: "pen-to-square", link: "1" },
+          { text: "Advanced", icon: "pen-to-square", link: "2" },
+        ],
+      },
+      {
         text: "Swen90016",
         icon: "pen-to-square",
         prefix: "swen90016/",

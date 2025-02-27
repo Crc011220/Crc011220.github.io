@@ -34,12 +34,12 @@ _Aug 2020 - Dec 2023_
 ---
 
 ## TECHNICAL SKILLS
-- **Programming Languages**: **Java**, Python, C#, JavaScript, TypeScript, SQL, R
+- **Programming Languages**: **Java**, Python, C#, JavaScript, TypeScript, SQL, R, Bash, Lua
 - **Frameworks**: **Spring Boot**, Spring Cloud, Django, MyBatis, Node.js, Express.js, Next.js, Vue.js, WordPress
-- **Middleware**: RabbitMQ, Kafka, NGINX
-- **Databases**: MySQL, PostgreSQL, Redis, Elasticsearch, MongoDB
-- **Development Tools**: Git, Docker, Kubernetes, Linux, Postman, JMeter, Swagger, Selenium
-- **Certifications**: AWS Cloud Practitioner, AWS Solution Architect Associate
+- **Middleware**: Redis, Elasticsearch, RabbitMQ, Kafka, NGINX
+- **Databases**: MySQL, PostgreSQL, MongoDB
+- **Development Tools**: Git, Docker, Kubernetes, Linux, Postman, Maven, JMeter, Swagger, Selenium
+- **Certifications**: AWS Cloud Practitioner
 ---
 
 ## INTERNSHIPS
