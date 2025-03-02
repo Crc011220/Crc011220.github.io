@@ -34,7 +34,7 @@ _Aug 2020 - Dec 2023_
 ---
 
 ## TECHNICAL SKILLS
-- **Programming Languages**: **Java**, Python, C#, JavaScript, TypeScript, SQL, R, Bash, Lua
+- **Programming Languages**: **Java**, Python, C#, JavaScript, TypeScript, SQL, Shell, Lua, R
 - **Frameworks**: **Spring Boot**, Spring Cloud, Django, MyBatis, Node.js, Express.js, Next.js, Vue.js, WordPress
 - **Middleware**: Redis, Elasticsearch, RabbitMQ, Kafka, NGINX
 - **Databases**: MySQL, PostgreSQL, MongoDB

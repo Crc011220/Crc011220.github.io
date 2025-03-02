@@ -37,7 +37,7 @@ _2020年8月 - 2023年12月_
 
 ## 技能
 
-- **编程语言**: Java, Python, JavaScript, SQL, C#, R
+- **编程语言**: Java, Python, JavaScript, SQL, C#, Shell, Lua, R
 - **框架**: Spring Boot, Spring Cloud, Django, MyBatis, Node.js, Express.js, Vue, React
 - **数据库**: MySQL, PostgreSQL, Redis, Elasticsearch, MongoDB
 - **开发工具**: Git, Docker, Kubernetes

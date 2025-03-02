@@ -32,6 +32,8 @@ export const enNavbar = navbar([
           { text: "Longest Continuous Increasing Subsequence, LCIS", icon: "pen-to-square", link: "18" },
           { text: "KMP Algorithm", icon: "pen-to-square", link: "19" },
           { text: "Distributed Consistency Algorithms", icon: "pen-to-square", link: "20" },
+          { text: "Question 146", icon: "pen-to-square", link: "21" },
+
         ],
       },
       {
@@ -156,11 +158,16 @@ export const enNavbar = navbar([
         ],
       },
       {
-        text: "Swen90016",
+        text: "Unimelb Notes",
         icon: "pen-to-square",
-        prefix: "swen90016/",
+        prefix: "unimelb/",
         children: [
-          { text: "Notes", icon: "pen-to-square", link: "1" },
+          { text: "SWEN90016", icon: "pen-to-square", link: "1" },
+          { text: "COMP90048", icon: "pen-to-square", link: "2" },
+          { text: "COMP90049", icon: "pen-to-square", link: "3" },
+          { text: "COMP90050", icon: "pen-to-square", link: "4" },
+          { text: "COMP90024", icon: "pen-to-square", link: "5" },
+
         ],
       },
       {

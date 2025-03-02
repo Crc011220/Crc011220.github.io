@@ -16,15 +16,14 @@ projects:
     link: https://github.com/Crc011220/dkd
 
   - icon: project
-    name: Blog
-    desc: Richard Chen's Blog
-    link: https://github.com/Crc011220/personalweb
-
-  - icon: project
     name: Rpc
     desc: A Lightweight Remote Procedure Call Framework
     link: https://github.com/Crc011220/RPC
 
+  - icon: project
+    name: Blog
+    desc: Richard Chen's Blog
+    link: https://github.com/Crc011220/personalweb
   # - icon: article
   #   name: article name
   #   desc: Detailed description of the article
