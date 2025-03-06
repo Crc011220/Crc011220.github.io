@@ -43,6 +43,7 @@ export const enNavbar = navbar([
         children: [
           { text: "Part 1", icon: "pen-to-square", link: "1" },
           { text: "Part 2", icon: "pen-to-square", link: "2" },
+          { text: "Udemy Course", icon: "pen-to-square", link: "3" },
         ],
       },
       {
@@ -88,6 +89,14 @@ export const enNavbar = navbar([
         children: [
           { text: "Concepts in Distributed Systems", icon: "pen-to-square", link: "1" },
           { text: "Dubbo Architecture", icon: "pen-to-square", link: "2" },
+        ],
+      },
+      {
+        text: "Docker",
+        icon: "pen-to-square",
+        prefix: "docker/",
+        children: [
+          { text: "Docker Volumes", icon: "pen-to-square", link: "1" },
         ],
       },
       {
