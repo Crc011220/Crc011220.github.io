@@ -108,6 +108,17 @@ export const enNavbar = navbar([
         ],
       },
       {
+        text: "Hadoop and Hive",
+        icon: "pen-to-square",
+        prefix: "hadoop/",
+        children: [
+          { text: "HDFS", icon: "pen-to-square", link: "HDFS" },
+          { text: "MapReduce", icon: "pen-to-square", link: "MapReduce" },
+          { text: "Yarn", icon: "pen-to-square", link: "Yarn" },
+          { text: "Hive", icon: "pen-to-square", link: "Hive" },
+        ],
+      },
+      {
         text: "Interview",
         icon: "pen-to-square",
         prefix: "interview/",
@@ -171,11 +182,11 @@ export const enNavbar = navbar([
         icon: "pen-to-square",
         prefix: "unimelb/",
         children: [
-          { text: "SWEN90016", icon: "pen-to-square", link: "1" },
-          { text: "COMP90048", icon: "pen-to-square", link: "2" },
-          { text: "COMP90049", icon: "pen-to-square", link: "3" },
-          { text: "COMP90050", icon: "pen-to-square", link: "4" },
-          { text: "COMP90024", icon: "pen-to-square", link: "5" },
+          { text: "SWEN90016", icon: "pen-to-square", link: "SWEN90016" },
+          { text: "COMP90048", icon: "pen-to-square", link: "COMP90048" },
+          { text: "COMP90049", icon: "pen-to-square", link: "COMP90049" },
+          { text: "COMP90050", icon: "pen-to-square", link: "COMP90050" },
+          { text: "COMP90024", icon: "pen-to-square", link: "COMP90024" },
 
         ],
       },
