@@ -8,51 +8,24 @@ export default hopeTheme({
 
   author: {
     name: "Richard Chen",
-    // url: "https://mister-hope.com",
+    url: "https://mister-hope.com",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://em-content.zobj.net/source/apple/391/thinking-face_1f914.png",
+  logo: "https://img.taotu.cn/ssd/ssd4/1/2024-07-08/1_e36ceb8c09656a291a6f0a33178736f9.webp",
 
-  // repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "Crc011220/personalweb",
   fullscreen: true,
   docsDir: "src",
 
   blog: {
     medias: {
-      // Baidu: "https://example.com",
-      // BiliBili: "https://example.com",
-      // Bitbucket: "https://example.com",
-      // Dingding: "https://example.com",
-      // Discord: "https://example.com",
-      // Dribbble: "https://example.com",
-      // Email: "mailto:info@example.com",
-      // Evernote: "https://example.com",
-      // Facebook: "https://example.com",
-      // Flipboard: "https://example.com",
-      // Gitee: "https://example.com",
       Linkedin: "https://www.linkedin.com/in/ruochen-chen-35325a30a/",
       GitHub: "https://github.com/Crc011220",
       Gitlab: "https://gitlab.com/ruocchen1220",
       Gmail: "mailto:ruocchen1220@gmail.com",
-      // Instagram: "https://example.com",
-      // Lark: "https://example.com",
-      // Lines: "https://example.com",
-      Steam: "https://steamcommunity.com/profiles/76561198799729482/"
-      // Pinterest: "https://example.com",
-      // Pocket: "https://example.com",
-      // QQ: "https://example.com",
-      // Qzone: "https://example.com",
-      // Reddit: "https://example.com",
-      // Rss: "https://example.com",
-      // Steam: "https://example.com",
-      // Twitter: "https://example.com",
-      // Wechat: "https://example.com",
-      // Weibo: "https://example.com",
-      // Whatsapp: "https://example.com",
-      // Youtube: "https://example.com",
-      // Zhihu: "https://example.com",
+      Steam: "https://steamcommunity.com/profiles/76561198799729482/",
     },
   },
 

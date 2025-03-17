@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: home
 title: 主页
-heroImage: https://em-content.zobj.net/source/apple/391/thinking-face_1f914.png
+heroImage: https://img.taotu.cn/ssd/ssd4/1/2024-07-08/1_9d9a8b16247d0f06f2f462b46cd6f07a.webp
 bgImage: https://images.pexels.com/photos/547115/pexels-photo-547115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 bgImageDark: https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 heroText: 探索RC的个人历程
@@ -20,10 +20,15 @@ projects:
     desc: A Lightweight Remote Procedure Call Framework
     link: https://github.com/Crc011220/RPC
 
-  - icon: project
-    name: Blog
-    desc: Richard Chen's Blog
-    link: https://github.com/Crc011220/personalweb
+  # - icon: project
+  #   name: Blog
+  #   desc: Richard Chen's Blog
+  #   link: https://github.com/Crc011220/personalweb
+    
+  - icon: friend
+    name: LeetCode
+    desc: My LeetCode Account
+    link: https://leetcode.com/u/pjQlEQY1eS/
 #  - icon: project
 #    name: 项目名称
 #    desc: 项目详细描述

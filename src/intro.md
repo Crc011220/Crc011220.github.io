@@ -70,7 +70,7 @@ _Jul 2024 - Nov 2024_
 ## PROJECT EXPERIENCES
 
 ### Lightweight Remote Procedure Call Framework
-*Jan 2025 - Mar 2025*
+*Jan 2025 - Mar 2025*  
 *Technologies*: Java, Netty, Zookeeper, Redis
 - Developed an RPC framework utilizing dynamic proxies to enable transparent service invocation, simplifying interactions between clients and servers
 - Enhanced network communication efficiency by replacing traditional blocking I/O with Netty's non-blocking I/O (NIO) capabilities
