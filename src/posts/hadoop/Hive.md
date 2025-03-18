@@ -68,3 +68,12 @@ select * from test_struct;
 
 ## More Hive SQL Syntax
 [More about Hive SQL syntax](../../zh/posts/hive/Hive-SQL语法大全.md)
+
+:::info
+start-dfs.sh
+start-yarn.sh
+history server
+hive-server2
+hive-metastore
+Need to start all these services before running Hive queries.
+:::

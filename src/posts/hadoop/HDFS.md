@@ -45,7 +45,7 @@ HDFS, like the Linux system, is organized with `/` as the root directory.
 - Parameters requiring an HDFS path will automatically be recognized as hdfs://  
 - Unless you explicitly need to write or not write to avoid bugs, generally, you don't need to write the protocol header.
 
-### HDFS Commands (New Version Usage), Usage: `hdfs dfs [generic options]`
+### HDFS Commands (New Version Usage), Usage: `hdfs dfs [generic options] or hadoop fs [generic options]`
 #### 1. Create a directory 
 `hdfs dfs -mkdir [-p] <path> ...`
 - path is the directory to be created  

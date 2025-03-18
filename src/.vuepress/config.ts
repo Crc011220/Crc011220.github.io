@@ -1,11 +1,10 @@
 import { defineUserConfig } from "vuepress";
-
+import { hopeTheme } from "vuepress-theme-hope";
 import theme from "./theme.js";
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 
 export default defineUserConfig({
   base: "/personalweb/",
-
   locales: {
     "/": {
       lang: "en-US",
@@ -20,6 +19,8 @@ export default defineUserConfig({
   },
 
   theme,
+
+
 
   // head: [
     // [
@@ -61,3 +62,4 @@ export default defineUserConfig({
   // Enable it with pwa
   // shouldPrefetch: false,
 });
+

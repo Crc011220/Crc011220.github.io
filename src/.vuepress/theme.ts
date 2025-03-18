@@ -8,9 +8,8 @@ export default hopeTheme({
 
   author: {
     name: "Richard Chen",
-    url: "https://mister-hope.com",
+    // url: "https://mister-hope.com",
   },
-
   iconAssets: "fontawesome-with-brands",
 
   logo: "https://img.taotu.cn/ssd/ssd4/1/2024-07-08/1_e36ceb8c09656a291a6f0a33178736f9.webp",
