@@ -46,7 +46,7 @@ tag:
 - In **IDEA**, the relative path is based on the **project root** rather than the **module root**.  
 
 #### 2. **Spark File Source Partitioning Strategy**  
-- JavaRDD<String> rdd = sc.parallelize(list,3); //3 partitions\
+- `JavaRDD<String> rdd = sc.parallelize(list,3);` //3 partitions\
 - If above is not set, set spark.default.parallelism
 - If above is not set, Spark uses the following default value `conf.setMaster("local[*]");`
 
