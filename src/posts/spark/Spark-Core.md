@@ -115,46 +115,45 @@ All methods can be divided into two categories:
 
 
 #### Map()
-- 默认情况下，新创建的RDD分区数量和之前的RDD分区数量相同
-- 默认情况下，数据所在的分布也不会变
-- 数据将所有的RDD执行完，才会执行下一个操作
+- By default, the number of partitions in a newly created RDD is the same as the number of partitions in the previous RDD.
+- By default, the distribution of data does not change.
+- Data will execute all RDDs before proceeding to the next operation.
 
 #### Filter()
-- 可能会导致数据倾斜，会导致性能下降
+- May cause data skew, leading to performance degradation.
 
 #### FlatMap() 
-- 与map()类似，但是可以返回多个元素
-- 拆开一个元素，然后再重新组合
-- map没有扁平化的能力
+- Similar to map(), but can return multiple elements.
+- Breaks down an element and then recombines it.
+- Map does not have the ability to flatten.
 
 #### GroupBy()
-- 按照key进行分组
-- 相同key的数据会被聚合到一起
-- 不会改变分区数量
-- 存在shuffle操作
+- Groups by key.
+- Data with the same key will be aggregated together.
+- Does not change the number of partitions.
+- Shuffle operation exists.
 
 :::info
 ### Shuffle
-- 为了解决数据倾斜问题，Spark会自动进行shuffle操作
-- 所有的数据必须分组后才能执行后续操作
-- 落盘操作会将数据写入磁盘
-- shuffle操作会将数据重新分配到不同的分区，以便每个分区的数据量相似
-- shuffle操作会消耗大量的网络带宽和磁盘IO
+- To solve the problem of data skew, Spark will automatically perform shuffle operations.
+- All data must be grouped before subsequent operations can be executed.
+- Disk operations will write data to disk.
+- Shuffle operations will redistribute data to different partitions so that each partition has a similar amount of data.
+- Shuffle operations consume a lot of network bandwidth and disk IO.
 :::
 
 #### Distinct()
-- 分布式去重
-- 分组 + shuffle操作
+- Distributed deduplication.
+- Grouping + shuffle operation.
 
 #### KV methods
-- use `parallelizePairs` to create a RDD of key-value pairs
-- use `mapValues` to apply a function to the values of the RDD
-- use `groupByKey` to group values by key
-- use `reduceByKey` to aggregate values by key
-
-
+- Use `parallelizePairs` to create an RDD of key-value pairs.
+- Use `mapValues` to apply a function to the values of the RDD.
+- Use `groupByKey` to group values by key.
+- Use `reduceByKey` to aggregate values by key.
 
 ### Actions
+- Make the data flow and trigger computation.
 - `collect` - returns an array that contains all the elements of the RDD.
 - `reduce` - reduces the elements of the RDD using a function.
 - `count` - returns the number of elements in the RDD.
@@ -164,3 +163,36 @@ All methods can be divided into two categories:
 - `saveAsObjectFile` - saves the RDD as an object file.
 - `foreach` - applies a function to each element of the RDD.
 - `foreachPartition` - applies a function to each partition of the RDD.
+
+### RDD Serialization
+:::info
+The logic code of RDD operators (methods) is executed on the Executor side, while other codes are executed on the driver side.
+:::
+
+For performance reasons, Spark 2.0 began to support another Kryo serialization mechanism. Kryo is 10 times faster than Serializable. When RDD shuffles data, simple data types, arrays, and string types are already serialized using Kryo within Spark.
+
+### Dependency 
+Narrow dependency means that each partition of the parent RDD is used by at most one partition of the child RDD (one-to-one or many-to-one).
+Wide dependency means that the same partition of the parent RDD is depended on by multiple partitions of the child RDD (can only be one-to-many), which will cause Shuffle.
+Transformations with wide dependencies include: sort, reduceByKey, groupByKey, join, and any operation that calls the rePartition function.
+Wide dependencies have a more significant impact on Spark's evaluation of a transformation, such as performance impact. If business requirements are not affected, try to avoid using transformations with wide dependencies, as wide dependencies will definitely involve shuffle, affecting performance.
+
+### RDD Caching
+RDD caches the previous computation results through the Cache or Persist method. By default, the data is cached in the JVM heap memory in serialized form. However, the data is not cached immediately when these two methods are called, but when the subsequent action operator is triggered, the RDD will be cached in the memory of the computing node for reuse.
+
+The cache method calls the persist method at the bottom, and the default cache level is MEMORY_ONLY. The persist method can change the storage level.
+
+![RDD Caching](spark-cache.png)
+The cache may be lost, or the data stored in memory may be deleted due to insufficient memory. The RDD cache fault tolerance mechanism ensures that even if the cache is lost, the calculation can still be executed correctly. Through a series of transformations based on RDD, the lost data will be recalculated. Since each partition of the RDD is relatively independent, only the lost part needs to be calculated, and there is no need to recalculate all partitions.
+
+### RDD Checkpoint
+Spark provides a Checkpoint function to write intermediate results of RDD to disk. When a Spark job fails, the RDD can be restored from the Checkpoint instead of being recalculated. The Checkpoint function can reduce Shuffle operations and improve performance.
+
+### Differences between Cache and Checkpoint
+- (1) Cache only saves the data without cutting off the lineage dependency. Checkpoint cuts off the lineage dependency.
+- (2) Cache data is usually stored in places like disk and memory, with low reliability. Checkpoint data is usually stored in fault-tolerant and highly available file systems like HDFS, with high reliability.
+- (3) It is recommended to use Cache for the RDD of checkpoint(), so that the checkpoint job only needs to read data from the Cache, otherwise, it needs to recalculate the RDD from scratch.
+- (4) After using the cache, you can release the cache through the unpersist() method.
+
+### Limitation of RDD
+- RDD can only process structured data and cannot process unstructured data such as images, audio, and video.
