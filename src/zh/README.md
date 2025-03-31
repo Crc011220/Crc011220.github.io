@@ -20,10 +20,10 @@ projects:
     desc: A Lightweight Remote Procedure Call Framework
     link: https://github.com/Crc011220/RPC
 
-  # - icon: project
-  #   name: Blog
-  #   desc: Richard Chen's Blog
-  #   link: https://github.com/Crc011220/personalweb
+  - icon: project
+    name: Coin-Exchange
+    desc: A cryptocurrency exchange project
+    link: https://github.com/Crc011220/coin-exchange
     
   - icon: friend
     name: LeetCode

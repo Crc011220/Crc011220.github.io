@@ -115,6 +115,14 @@ export const enNavbar = navbar([
         ],
       },
       {
+        text: "Note",
+        icon: "pen-to-square",
+        prefix: "note/",
+        children: [
+          { text: "Notes", icon: "pen-to-square", link: "index" },
+        ],
+      },
+      {
         text: "Typescript",
         icon: "pen-to-square",
         prefix: "typescript/",
