@@ -64,6 +64,49 @@ tag:
 
 
 ## Token
-
 ### How to solve the high load on the authorization server
 - Use JWT and store it in Redis to prevent malicious attacks
+
+## AOP
+- `RequestContextHolder`: Used to access the context information of the current request.
+- `ServletRequestAttributes`: Used to get and set attributes of the Servlet request.
+- `ProceedingJoinPoint`: In AOP, represents the method being executed and allows you to control the execution of the method.
+- `SecurityContextHolder`: Used to store and access the security context information in Spring Security.
+- `MethodSignature`: Used in AOP aspects to obtain the signature information of the proxied method.
+- `Authentication`: Used in Spring Security to represent and access the authentication information of the current user.
+
+
+## Difference Between `bootstrap.yml` and YAML on Nacos
+`bootstrap.yml` is a special configuration file used in Spring Boot applications that is loaded before the `application.yml`. It is primarily used for setting up the environment and context in which the application runs, such as property sources, encryption, and decryption keys. Here's how it differs from YAML configurations on Nacos:
+### `bootstrap.yml`
+- **Bootstrap Phase**: `bootstrap.yml` is loaded early in the application startup process, before the `ApplicationContext` is created.
+- **Purpose**: It is used to configure the bootstrap phase of the application, including setting up the Spring Cloud Config Server and Nacos configuration center.
+- **Content**: It typically contains non-overridable properties that are essential for the application to start, such as service discovery, config server, and encryption configurations.
+- **Example**:
+  ```yaml
+  spring:
+    application:
+      name: my-service
+    cloud:
+      nacos:
+        config:
+          server-addr: 127.0.0.1:8848
+          file-extension: yaml
+  ```
+### YAML on Nacos
+- **Dynamic Configuration**: YAML configurations on Nacos are dynamically managed and can be updated at runtime without restarting the application.
+- **Purpose**: They are used to externalize and manage application configurations centrally, allowing for easier updates and less downtime.
+- **Content**: These configurations can include any properties that are part of your `application.yml`, such as database settings, feature flags, and service-specific configurations.
+- **Example**: A configuration file named `my-service.yaml` on Nacos might look like this:
+  ```yaml
+  server:
+    port: 8080
+  spring:
+    datasource:
+      url: jdbc:mysql://localhost:3306/mydb
+      username: user
+      password: pass
+  ```
+In summary, `bootstrap.yml` is used for the initial setup and bootstrap phase of the application, while YAML configurations on Nacos are used for dynamic, runtime configuration management.
+
+##
