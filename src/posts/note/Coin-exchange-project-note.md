@@ -109,4 +109,93 @@ tag:
   ```
 In summary, `bootstrap.yml` is used for the initial setup and bootstrap phase of the application, while YAML configurations on Nacos are used for dynamic, runtime configuration management.
 
-##
+## PatchMapping and PutMapping
+- Partial Update vs. Full Update: @PatchMapping is used for partial updates of resources, while @PutMapping is used for full updates of resources.
+- Request Body Content: When using @PatchMapping, the request body usually contains only the fields to be updated, whereas the request body of @PutMapping contains the complete state of the resource.
+- Idempotency: The PUT method is idempotent, meaning that multiple identical requests will have the same effect. The PATCH method is usually idempotent, but its idempotency depends on the implementation details.
+- In practical applications, choosing between @PatchMapping and @PutMapping depends on your specific needs and the granularity of resource updates. If you only need to update part of the resource's attributes, @PatchMapping is more appropriate; if you need to replace the entire resource, you should use @PutMapping.
+
+## @NotNull and @NotBlank
+- @NotNull: Used to ensure that a parameter is not null.
+- @NotBlank: Used to ensure that a string parameter is not blank (i.e., not empty or only whitespace).
+- Need to use @Validated annotation to validate the parameters on Controller.
+
+## AutoFilledValue in Mybatis-Plus
+- No need to set the value of the field in the entity class, and the value will be automatically filled by Mybatis-Plus.
+```java
+/**
+ *字段自动填充
+ */
+@Component
+public class AutoFiledValueHandler implements MetaObjectHandler {
+
+
+    /**
+     * 新增时填入值
+     * @param metaObject
+     */
+    @Override
+    public void insertFill(MetaObject metaObject) {
+        Long userId = getUserId();
+        /**
+         * 3 种情况不填充
+         * 1 值为null
+         * 2 自动类型不匹配
+         * 3 没有改字段
+         */
+        this.strictInsertFill(metaObject, "lastUpdateTime", Date.class, new Date());
+        this.strictInsertFill(metaObject, "createBy", Long.class, userId); // 创建人的填充
+        this.strictInsertFill(metaObject, "created", Date.class, new Date());
+
+    }
+
+
+    /**
+     * 修改时填入值
+     * @param metaObject
+     */
+    @Override
+    public void updateFill(MetaObject metaObject) {
+        Long userId = getUserId();
+        this.strictInsertFill(metaObject, "lastUpdateTime", Date.class, new Date());
+        this.strictInsertFill(metaObject, "modifyBy", Long.class, userId); // 修改人的填充
+
+    }
+
+    /**
+     * 获取安全上下文里的用户对象 --- 主要是在线程里面获取改值
+     * @return
+     */
+    private Long getUserId() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        Long userId = null;
+        if (authentication != null) {
+            String principal = authentication.getPrincipal().toString();
+            userId = Long.valueOf(principal);
+        }
+        return userId;
+    }
+}
+
+// domain example
+@TableField(value = "create_by", fill = FieldFill.INSERT) // 自动填充 来自AutoFiledValueHandler
+@ApiModelProperty(value="创建人")
+private Long createBy;
+```
+
+## SecurityContextHolder
+
+In Spring Security, `SecurityContextHolder.getContext().getAuthentication().getPrincipal()` is a common method used to obtain the principal of the currently authenticated user. Here is an explanation of each part:
+- `SecurityContextHolder.getContext()`: Retrieves the current security context (SecurityContext), which contains the security information of the current thread, such as the authentication object (Authentication).
+- `.getAuthentication()`: Obtains the current authentication object (Authentication) from the security context, which contains detailed information about the authenticated user, such as username, password, authorities, and the user principal.
+- `.getPrincipal()`: Retrieves the user principal from the authentication object. Typically, this principal is a UserDetails implementation or a string, depending on your configuration. If the user is authenticated, this method usually returns an object representing the current user.
+- `.toString()`: Converts the obtained user principal to a string. This usually calls the `toString()` method of the user principal object.
+Here are some key points about this expression:
+- If the user is not authenticated, `getAuthentication()` may return a null Authentication object, and calling `getPrincipal()` will return null, so calling the `toString()` method in this case will throw a `NullPointerException`.
+- If the user is authenticated, `getPrincipal()` typically returns a `UserDetails` implementation or a custom user entity. In this case, calling `toString()` will return the string representation of that object, which is usually the fully qualified class name plus the memory address.
+
+When using this expression, you should always ensure that the user is authenticated and handle potential null values appropriately.
+
+
+## isBlank() vs. isEmpty()
+总结来说，isBlank 方法会检查字符串是否为空或只包含空白字符，而 isEmpty 方法只检查字符串是否为 null 或空（长度为0）。如果你想要检查一个字符串是否完全没有有用的内容（包括空白字符），你应该使用 isBlank。如果你只关心字符串是否为 null 或空，而不关心它是否包含空白字符，那么你应该使用 isEmpty。
