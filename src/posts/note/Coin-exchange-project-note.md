@@ -198,4 +198,7 @@ When using this expression, you should always ensure that the user is authentica
 
 
 ## isBlank() vs. isEmpty()
-总结来说，isBlank 方法会检查字符串是否为空或只包含空白字符，而 isEmpty 方法只检查字符串是否为 null 或空（长度为0）。如果你想要检查一个字符串是否完全没有有用的内容（包括空白字符），你应该使用 isBlank。如果你只关心字符串是否为 null 或空，而不关心它是否包含空白字符，那么你应该使用 isEmpty。
+In summary, the isBlank method checks if a string is empty or contains only whitespace characters, while the isEmpty method only checks if a string is null or empty (length is 0). If you want to check if a string has no useful content at all (including whitespace characters), you should use isBlank. If you only care if the string is null or empty, and do not care if it contains whitespace characters, then you should use isEmpty.
+
+## AWS SNS (SMS service)
+- No SMS template service
