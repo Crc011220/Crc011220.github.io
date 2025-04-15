@@ -206,4 +206,29 @@ In summary, the isBlank method checks if a string is empty or contains only whit
 ## Mapstruct
 
 ## Request Combination
-- 尽量减少rpc调用
+- minimize rpc call as much as possible
+- combine multiple request into one request
+- use batch request to improve performance
+
+
+## JetCache as distributed lock
+```java
+
+// Add a distributed lock for the operation identified by cashRechargeAuditRecord.getId().
+// If the lock is successfully acquired, execute the specified business logic within 5 minutes (300 seconds).
+// Otherwise, skip execution to prevent duplicate processing.
+
+// @CreateCache(
+//     name = "CASH_RECHARGE_LOCK",     // Cache name (prefix)
+//     timeUnit = TimeUnit.SECONDS,     // Expiration time unit
+//     expire = 100,                    // Default expiration time: 100 seconds
+//     cacheType = CacheType.BOTH       // Use both local cache and remote cache (e.g., Redis)
+// )
+
+    @CreateCache(name = "CASH_RECHARGE_LOCK", timeUnit = TimeUnit.SECONDS, expire = 100, cacheType = CacheType.BOTH)
+    private Cache<String, String> cache;
+
+    cache.tryLockAndRun(cashRechargeAuditRecord.getId() + "" , 300, TimeUnit.SECONDS, () -> {
+          //do something
+    }
+```
