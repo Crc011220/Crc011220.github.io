@@ -9,3 +9,5 @@ tag:
 
 
 # AI Contents
+
+### 1. [AI API framework for Java](./javaai.md)

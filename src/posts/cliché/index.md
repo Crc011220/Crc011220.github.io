@@ -22,3 +22,6 @@ tag:
 ### 11. [Differences Between Local Storage, Cookies, Sessions, and Token](./11.md)
 ### 12. [BitMap](./12.md)
 ### 13. [BIO, NIO, AIO](./13.md)
+### 14. [Dynamic Proxy (JDK and CGLIB)](./14.md)
+### 15. [Snowflake Algorithm (Snowflake ID)](./15.md)
+### 16. [Serveless Fission](./16.md)
