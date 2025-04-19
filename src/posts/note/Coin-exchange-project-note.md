@@ -232,3 +232,9 @@ In summary, the isBlank method checks if a string is empty or contains only whit
           //do something
     }
 ```
+
+## Feign
+```java
+@FeignClient(value = "admin-bank-service", path = "/adminBanks", configuration = OAuth2FeignConfig.class)
+```
+When using @FeignClient in Spring Cloud, if multiple clients use the same name (or value, they are equivalent), the Spring container will consider them as the same bean, resulting in conflicts when registering multiple. Adding a contextId in the annotation resolves this issue.
