@@ -230,7 +230,7 @@ In summary, the isBlank method checks if a string is empty or contains only whit
 
     cache.tryLockAndRun(cashRechargeAuditRecord.getId() + "" , 300, TimeUnit.SECONDS, () -> {
           //do something
-    }
+    })
 ```
 
 ## Feign
