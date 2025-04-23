@@ -238,3 +238,45 @@ In summary, the isBlank method checks if a string is empty or contains only whit
 @FeignClient(value = "admin-bank-service", path = "/adminBanks", configuration = OAuth2FeignConfig.class)
 ```
 When using @FeignClient in Spring Cloud, if multiple clients use the same name (or value, they are equivalent), the Spring container will consider them as the same bean, resulting in conflicts when registering multiple. Adding a contextId in the annotation resolves this issue.
+
+## SnowFlake Config
+```java
+import cn.hutool.core.lang.Snowflake;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class IdConfig {
+
+    @Value("${snow.app.id:3}")
+    private Integer appId;
+    @Value("${snow.data.id:1}")
+    private Integer dataId;
+    @Bean
+    public Snowflake snowflake() {
+        return new Snowflake(appId, dataId);
+    }
+}
+```
+#### appid
+官方名称：通常对应 Snowflake 的 workerId（工作节点ID）
+
+作用：标识不同的应用实例或服务节点
+
+取值范围：一般 0~31（5位二进制，最多支持32个应用实例）
+
+使用场景：当你的系统部署了多个相同服务的实例时（如微服务多实例部署）
+
+用于区分同一数据中心内的不同服务
+
+#### dataid
+官方名称：对应 Snowflake 的 datacenterId
+
+作用：标识不同的数据中心/机房
+
+取值范围：一般 0~31（5位二进制，最多支持32个数据中心）
+
+使用场景：当你的系统跨机房/跨地域部署时
+
+用于避免不同机房生成的ID冲突

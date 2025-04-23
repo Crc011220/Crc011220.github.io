@@ -123,6 +123,14 @@ export const enNavbar = navbar([
         ],
       },
       {
+        text: "Tailwind CSS",
+        icon: "pen-to-square",
+        prefix: "tailwind/",
+        children: [
+          { text: "Tailwind CSS Contents", icon: "pen-to-square", link: "index" },
+        ],
+      },
+      {
         text: "Typescript",
         icon: "pen-to-square",
         prefix: "typescript/",
