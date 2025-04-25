@@ -69,6 +69,17 @@ _Jul 2024 - Nov 2024_
 
 ## PROJECT EXPERIENCES
 
+### Crypto Currency Trading System
+*Mar 2025 - Still ongoing*  
+*Technologies*: Spring Boot, Spring Cloud, Spring Security, MyBatis-Plus, Redis, JWT, AWS, Docker, RocketMQ, Disruptor
+- Designed a microservices architecture with Spring Cloud, including services like GatewayService, AuthorizationService, MemberService, AdminService, FinanceService, and ExchangeService. Leveraged Nacos for service discovery and configuration management, OpenFeign for remote procedure calls, and LoadBalancer for client-side load balancing
+- Implemented a unified authentication and authorization mechanism using Spring Security OAuth2.0 and JWT, with secure RESTful API communication supported by OpenFeign for inter-service calls
+- Utilized Redis to cache hotspot data such as access tokens and verification codes, significantly improving system responsiveness and throughput
+- Deployed the system on AWS EC2 instances, with AWS S3 for static asset storage and AWS SNS for SMS delivery, ensuring scalability and high availability
+- Integrated third-party services including GeeTest for CAPTCHA validation and Alibaba Cloud Identity Verification to enhance platform security
+- Adopted the Snowflake algorithm to generate globally unique IDs and employed JetCache to implement high-performance distributed locking, ensuring data consistency and preventing overselling in high-concurrency scenarios such as flash sales
+- Built a high-throughput, low-latency, and lock-free matching system using RocketMQ and Disruptor, enabling seamless message ingestion → RingBuffer dispatch → asynchronous processing by the match engine
+
 ### Lightweight Remote Procedure Call Framework
 *Jan 2025 - Mar 2025*  
 *Technologies*: Java, Netty, Zookeeper, Redis
@@ -90,14 +101,6 @@ _Jul 2024 - Nov 2024_
 - Boosted search efficiency by integrating Elasticsearch, resulting in a 60% faster data retrieval rate
 - Implemented JWT encryption for securing newly created user information and utilized Redis for persistent storage of user data
 - Managed and optimized over 500MB of static files across multiple projects using Alibaba Cloud OSS (Object Storage Service), resulting in a reduction in load times and a decrease in storage costs
-
-### User Sharing Platform  
-*Jun 2024 - Jul 2024*  
-*Technologies*: Node.js, Express.js, React.js, MongoDB  
-- Developed a responsive and interactive user interface with React, enhancing user experience and accessibility across various devices
-- Utilized MongoDB to store user data and shared addresses, ensuring efficient data retrieval and storage
-- Created RESTful APIs with Node.js and Express.js to handle user requests and data processing, ensuring seamless communication between frontend and backend
-- Integrated security features such as data encryption, authentication, and authorization to protect user data and ensure a secure platform, leading to a 50% reduction in security incidents
 
 ### Vending Machine Management System  
 *Mar 2024 – May 2024*  

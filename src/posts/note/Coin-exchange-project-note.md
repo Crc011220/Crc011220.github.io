@@ -280,3 +280,128 @@ public class IdConfig {
 使用场景：当你的系统跨机房/跨地域部署时
 
 用于避免不同机房生成的ID冲突
+
+
+## Disruptor
+
+### 一、Disruptor 简介
+
+**Disruptor** 是由英国金融公司 **LMAX** 开发的一个高性能并发框架，核心目标是**在多线程之间高效传递消息**，主要用于替代 `BlockingQueue` 实现更快的生产者-消费者模型。
+
+#### 核心特点：
+
+- 高吞吐量（百万级 ops/s）
+- 低延迟（微秒级别）
+- 无锁设计（基于 CAS 操作）
+- 对 GC 友好（预分配内存）
+- 适用于：高频交易、日志系统、游戏服务器事件处理等
+
+---
+
+### 二、RingBuffer：Disruptor 的核心组件
+
+
+RingBuffer 是 Disruptor 中的**核心数据结构**，相当于一个 **环形队列**，用于在多线程间传递事件数据。
+
+- 本质是一个循环数组，位置用完之后回到起点，循环使用。
+- 环大小通常是 **2 的幂次方**
+- 环中每个格子叫做一个 `slot`（槽位）
+- 使用序号 `sequence` 控制读写位置
+- 多个生产者/消费者时需协调读写顺序
+
+---
+
+#### RingBuffer 创建示例
+
+```java
+RingBuffer<Event> ringBuffer = RingBuffer.createSingleProducer(
+    Event::new,         // Event 工厂
+    1024,               // 大小必须为 2 的幂
+    new BlockingWaitStrategy() // 等待策略
+);
+```
+
+---
+
+### 三、Disruptor 的使用流程
+
+#### 👣 步骤概览：
+
+1. 创建事件类 `Event` （用于传输的数据）
+2. 实现事件处理器 `EventHandler`
+3. 初始化 RingBuffer 和 Disruptor
+4. 启动 Disruptor
+5. 生产者发布事件
+
+---
+
+#### 示例代码简化版：
+
+```java
+// 1. 事件类
+public class Event {
+    private String value;
+    public void setValue(String value) { this.value = value; }
+    public String getValue() { return value; }
+}
+
+// 2. 事件处理器
+public class EventHandlerImpl implements EventHandler<Event> {
+    @Override
+    public void onEvent(Event event, long sequence, boolean endOfBatch) {
+        System.out.println("处理事件: " + event.getValue());
+    }
+}
+
+// 3. 初始化 Disruptor
+Disruptor<Event> disruptor = new Disruptor<>(
+    Event::new,
+    1024,
+    Executors.defaultThreadFactory(),
+    ProducerType.SINGLE,
+    new BlockingWaitStrategy()
+);
+disruptor.handleEventsWith(new EventHandlerImpl());
+disruptor.start();
+
+// 4. 发布事件
+RingBuffer<Event> ringBuffer = disruptor.getRingBuffer();
+long seq = ringBuffer.next();
+try {
+    Event event = ringBuffer.get(seq);
+    event.setValue("Hello, Disruptor!");
+} finally {
+    ringBuffer.publish(seq);
+}
+```
+
+---
+
+### 四、等待策略（Wait Strategy）
+
+等待策略用于控制消费者线程在等待新数据时的行为。
+
+| 策略类型             | 描述                         |
+|----------------------|------------------------------|
+| `BlockingWaitStrategy` | 使用锁和条件变量（最安全）     |
+| `BusySpinWaitStrategy` | 自旋等待（CPU资源占用高，低延迟） |
+| `YieldingWaitStrategy` | 使用 `Thread.yield()`，适合低延迟 |
+| `SleepingWaitStrategy` | 使用 `Thread.sleep()`，适合日志等低 CPU 场景 |
+
+---
+
+### 五、总结对比：Disruptor vs BlockingQueue
+
+| 特性           | Disruptor                  | BlockingQueue             |
+|----------------|----------------------------|---------------------------|
+| 内部结构       | RingBuffer（循环数组）     | 链表/数组                 |
+| 并发性能       | 极高（无锁）               | 一般（加锁）              |
+| 内存分配       | 预分配，低 GC              | 动态分配，易触发 GC       |
+| 延迟           | 微秒级                     | 毫秒级                    |
+| 等待机制       | 可定制 WaitStrategy        | 固定阻塞行为              |
+
+---
+
+- [Disruptor GitHub 地址](https://github.com/LMAX-Exchange/disruptor)
+
+---
