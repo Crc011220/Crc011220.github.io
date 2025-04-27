@@ -25,10 +25,10 @@ projects:
     desc: A cryptocurrency exchange project
     link: https://github.com/Crc011220/coin-exchange
     
-  - icon: friend
-    name: LeetCode
-    desc: My LeetCode Account
-    link: https://leetcode.com/u/pjQlEQY1eS/
+  - icon: project
+    name: Ui
+    desc: A custom user interface of DeepSeek
+    link: https://github.com/Crc011220/ui
 #  - icon: project
 #    name: 项目名称
 #    desc: 项目详细描述
