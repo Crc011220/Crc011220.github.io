@@ -72,13 +72,15 @@ _Jul 2024 - Nov 2024_
 ### Crypto Currency Trading System
 *Mar 2025 - Still ongoing*  
 *Technologies*: Spring Boot, Spring Cloud, Spring Security, MyBatis-Plus, Redis, JWT, AWS, Docker, RocketMQ, Disruptor
-- Designed a microservices architecture with Spring Cloud, including services like GatewayService, AuthorizationService, MemberService, AdminService, FinanceService, and ExchangeService. Leveraged Nacos for service discovery and configuration management, OpenFeign for remote procedure calls, and LoadBalancer for client-side load balancing
+- Designed a microservices architecture with Spring Cloud, including services like GatewayService, AuthorizationService, MemberService, AdminService, FinanceService, and ExchangeService. Leveraged Nacos for service discovery and configuration management, OpenFeign for remote procedure calls, and LoadBalancer for server-side load balancing
 - Implemented a unified authentication and authorization mechanism using Spring Security OAuth2.0 and JWT, with secure RESTful API communication supported by OpenFeign for inter-service calls
 - Utilized Redis to cache hotspot data such as access tokens and verification codes, significantly improving system responsiveness and throughput
 - Deployed the system on AWS EC2 instances, with AWS S3 for static asset storage and AWS SNS for SMS delivery, ensuring scalability and high availability
 - Integrated third-party services including GeeTest for CAPTCHA validation and Alibaba Cloud Identity Verification to enhance platform security
 - Adopted the Snowflake algorithm to generate globally unique IDs and employed JetCache to implement high-performance distributed locking, ensuring data consistency and preventing overselling in high-concurrency scenarios such as flash sales
 - Built a high-throughput, low-latency, and lock-free matching system using RocketMQ and Disruptor, enabling seamless message ingestion → RingBuffer dispatch → asynchronous processing by the match engine
+- Integrated WebSocket communication using Tio + RocketMQ, allowing backend services to push real-time market data to clients efficiently
+- Implemented a scheduled push mechanism using Spring Boot tasks for event subscriptions, and utilized Redis List to efficiently store and manage candlestick data
 
 ### Lightweight Remote Procedure Call Framework
 *Jan 2025 - Mar 2025*  

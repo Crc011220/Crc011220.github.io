@@ -399,4 +399,340 @@ public class MyCommandLineRunner implements CommandLineRunner {
 
 Spring Boot will automatically call the `run` method of all beans that implement the `CommandLineRunner` interface. If you have multiple `CommandLineRunner` implementations, you can use the `@Order` annotation to control their execution order.
 
-## RocketMQ Configuration
+## RocketMQ Configurations and Classes
+### Yaml
+```yaml
+spring:
+  cloud:
+    stream:
+      bindings:
+        # Define an input channel exchange-trades-in (logical name)
+        exchange-trades-in: 
+          destination: exchange-trades-out   # The actual RocketMQ topic name is exchange-trades-out
+          content-type: application/plain    # Message format is plain text (MIME type)
+
+        # Define an output channel subscribe-group-out (logical name)
+        subscribe-group-out: 
+          destination: tio-group             # The bound RocketMQ topic is tio-group
+          content-type: application/plain    # Message format is plain text
+          group: order-group                 # Specify the RocketMQ consumer group name (ensuring messages are processed once by a consumer within a group)
+          consumer.maxAttempts: 1            # Maximum retry count for consumer failure is 1 (default is 3)
+
+      rocketmq:
+        binder:
+          name-server: rocket-server:9876    # Specify the RocketMQ NameServer address (for discovering broker)
+```
+
+### Classes
+
+####  1. `Sink`（Message Receiving "Sink"）
+
+> The interface class for receiving messages, bound with the `@Input` annotation, indicating the consumption of messages from a certain channel/topic.
+
+```java
+public interface MySink {
+    String INPUT = "exchange-trades-in"; // Must match the logical channel name configured in YAML
+
+    @Input(INPUT)
+    SubscribableChannel input();
+}
+```
+
+🧠 **Explanation**：
+- `exchange-trades-in` is the logical channel name you configured in `application.yml`.
+- Messages are pushed from RocketMQ to this input channel.
+- You can use `@StreamListener` in a certain `@Service` to listen to this channel and process messages.
+
+---
+
+#### 2. `Source`（Message Sending "Source"）
+
+> The interface class for sending messages, bound with the `@Output` annotation, indicating the sending of messages to a certain channel/topic.
+
+```java
+public interface MySource {
+    String OUTPUT = "subscribe-group-out"; // Must match the logical output channel name configured in YAML
+
+    @Output(OUTPUT)
+    MessageChannel output();
+}
+```
+
+🧠 **Explanation**：
+- `subscribe-group-out` is the logical output channel name you configured in YAML.
+- Use this channel to send messages to a certain topic in RocketMQ.
+
+---
+
+#### 3. `Config`（Configuration Class）
+
+> The configuration class for registering `Sink` or `Source` interfaces as Spring Beans.
+
+```java
+@Configuration
+@EnableBinding({MySink.class, MySource.class})
+public class StreamConfig {
+    // You can add other bean definitions if needed
+}
+```
+
+🧠 **Explanation**：
+- `@EnableBinding` is an annotation provided by Spring Cloud Stream, used to enable message channel binding.
+- The registered `MySink` and `MySource` interfaces will be automatically recognized and correspond to the `bindings` in YAML.
+
+---
+
+####  4. `Listener`（Listener Class）
+
+> The class that truly processes the received messages, listening to the channel defined by `Sink`.
+
+```java
+@Service
+public class TradeListener {
+
+    @StreamListener(MySink.INPUT)
+    public void handleMessage(String message) {
+        System.out.println("Received: " + message);
+        // You can execute business logic here
+    }
+}
+```
+
+🧠 **Explanation**：
+- Through the `@StreamListener` annotation, specify the channel to listen to (i.e., `MySink.INPUT`), processing messages pushed from RocketMQ.
+- Message processing supports automatic deserialization, such as defining `content-type` as `application/json`, which can directly receive Java objects.
+
+---
+
+### 🧩 Simplified Relationship Diagram Between Components：
+
+```
+┌─────────────┐       ┌──────────────┐
+│ Source Class    ├──────▶ RocketMQ Topic │
+└─────┬───────┘       └────┬──────────┘
+      │                    │
+  send(msg)            push(msg)
+      │                    │
+┌─────▼──────┐       ┌─────▼────────┐
+│ RocketMQ   │──────▶ Sink + Listener │
+└────────────┘       └───────────────┘
+```
+
+---
+
+### @Schedule in SpringBoot
+In Spring Boot, `@Scheduled` is an annotation for **scheduling tasks**, allowing you to easily define a method to execute at a fixed time interval.
+
+---
+
+
+#### 1. Enable Task Scheduling
+
+Add the annotation to your main class or configuration class:
+
+```java
+@SpringBootApplication
+@EnableScheduling
+public class YourApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(YourApplication.class, args);
+    }
+}
+```
+
+---
+
+#### 2. Use `@Scheduled` Annotation on a Method
+
+```java
+@Component
+public class ScheduledTask {
+
+    // Execute every 5 seconds
+    @Scheduled(fixedRate = 5000)
+    public void runEveryFiveSeconds() {
+        System.out.println("Fixed rate task - " + System.currentTimeMillis());
+    }
+
+    // Delay 2 seconds before starting, then execute every 5 seconds
+    @Scheduled(fixedRate = 5000, initialDelay = 2000)
+    public void runWithInitialDelay() {
+        System.out.println("With initial delay - " + System.currentTimeMillis());
+    }
+
+    // Execute daily at 1 AM
+    @Scheduled(cron = "0 0 1 * * ?")
+    public void runDailyAt1AM() {
+        System.out.println("Daily task at 1 AM");
+    }
+}
+```
+
+---
+
+#### Common Parameter Explanation
+
+| Parameter             | Explanation                                                                 |
+|------------------|----------------------------------------------------------------------|
+| `fixedRate`      | Execute every X milliseconds (from the start time of the last execution) |
+| `fixedDelay`     | Execute every X milliseconds (from the completion time of the last execution) |
+| `initialDelay`   | Delay X milliseconds before starting the first execution |
+| `cron`           | Use Cron expression to define the execution plan (supports seconds) |
+
+---
+
+#### Cron Expression Format
+
+```
+秒 分 时 日 月 星期 [年（可选）]
+```
+
+For example:
+
+| Expression                | Meaning                     |
+|-----------------------|--------------------------|
+| `0 0 1 * * ?`          | Every day at 1 AM            |
+| `0 */5 * * * ?`        | Every 5 minutes             |
+| `0 0/30 9-17 * * ?`    | Every 30 minutes from 9 AM to 5 PM on weekdays |
+
+---
+
+#### Notes
+
+- Scheduled methods **cannot have parameters and cannot return values**
+- Methods annotated with `@Scheduled` **must be `public`**
+- `@Scheduled` defaults to single-threaded execution (blocking)
+  - To support concurrent execution, you can customize the thread pool of `@EnableScheduling`.
+
+## Tio IWsMsgHandler
+`IWsMsgHandler` is an interface typically used in the context of WebSocket-based communication frameworks. It is often associated with handling messages for WebSocket connections in applications that use the WebSocket protocol to facilitate real-time, two-way communication between clients and servers.
+
+The name `IWsMsgHandler` likely comes from **"WebSocket Message Handler"**, where:
+
+- **"I"** denotes it's an interface.
+- **"Ws"** stands for WebSocket.
+- **"Msg"** refers to the message.
+- **"Handler"** indicates it is a handler that processes the message.
+
+In frameworks that support WebSockets, this interface defines methods for handling incoming and outgoing WebSocket messages.
+
+### Typical Functions of `IWsMsgHandler`
+
+1. **Handling incoming WebSocket messages**:
+   - When the server receives a message from a WebSocket client, the handler processes the message, performs business logic, and may send a response back to the client.
+   
+2. **Sending messages to clients**:
+   - The handler can also be responsible for sending messages to clients when triggered by events, commands, or notifications.
+
+3. **Managing WebSocket connections**:
+   - Often, the handler includes logic for managing the lifecycle of WebSocket connections, including opening and closing connections.
+
+4. **Error handling**:
+   - The handler may handle errors, including timeouts, message parsing errors, or connection issues.
+
+### Example of `IWsMsgHandler` Implementation
+
+Here’s an example of how an `IWsMsgHandler` interface might look in a Java application using WebSocket:
+
+```java
+public interface IWsMsgHandler {
+
+    // Handle incoming WebSocket message
+    void handleMessage(WebSocketSession session, String message);
+    
+    // Send a message to the client
+    void sendMessage(WebSocketSession session, String message);
+
+    // Handle WebSocket connection opened
+    void handleOpen(WebSocketSession session);
+    
+    // Handle WebSocket connection closed
+    void handleClose(WebSocketSession session, CloseStatus status);
+    
+    // Handle WebSocket error
+    void handleError(WebSocketSession session, Throwable throwable);
+}
+```
+
+### Example Implementation of `IWsMsgHandler`
+
+```java
+public class MyWebSocketHandler implements IWsMsgHandler {
+
+    @Override
+    public void handleMessage(WebSocketSession session, String message) {
+        // Logic to handle the incoming message
+        System.out.println("Received message: " + message);
+        
+        // Process the message and send a response
+        sendMessage(session, "Message received!");
+    }
+
+    @Override
+    public void sendMessage(WebSocketSession session, String message) {
+        try {
+            session.sendMessage(new TextMessage(message));  // Send response to client
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void handleOpen(WebSocketSession session) {
+        System.out.println("New WebSocket connection established");
+    }
+
+    @Override
+    public void handleClose(WebSocketSession session, CloseStatus status) {
+        System.out.println("WebSocket connection closed");
+    }
+
+    @Override
+    public void handleError(WebSocketSession session, Throwable throwable) {
+        System.out.println("Error occurred: " + throwable.getMessage());
+    }
+}
+```
+
+### Common Use Cases for `IWsMsgHandler`
+
+1. **Real-time Communication**:
+   - **Chat applications**, where messages are sent and received in real-time.
+
+2. **Notifications**:
+   - **Live sports updates**, **financial stock price updates**, etc., where WebSockets provide real-time push notifications to clients.
+
+3. **Gaming**:
+   - **Multiplayer games** can use WebSocket for real-time game state updates and player interactions.
+
+4. **Collaborative Apps**:
+   - **Collaborative editing tools**, where multiple users can edit a document in real-time.
+
+5. **IoT Communication**:
+   - Real-time communication with **IoT devices** for monitoring and control.
+
+---
+
+### Integration with Spring WebSocket
+
+In the context of a **Spring Boot application**, `IWsMsgHandler` can be integrated with **Spring WebSocket** using `@MessageMapping`, `@SendTo`, or custom `WebSocketHandler` implementations. 
+
+For example:
+
+```java
+@Component
+public class MyWebSocketHandler implements IWsMsgHandler {
+
+    @Override
+    @MessageMapping("/chat")
+    @SendTo("/topic/messages")
+    public String handleMessage(WebSocketSession session, String message) {
+        return "Received: " + message;  // Send a response back to all subscribers
+    }
+
+    // Other methods for open/close/error handling...
+}
+```
+
+This would allow real-time messaging over WebSockets in a Spring Boot application.
+
