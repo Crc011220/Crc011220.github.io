@@ -33,7 +33,7 @@ projects:
   - icon: link
     name: Cv
     desc: Online Resume
-    link: https://rcchen.dpdns.org/cn
+    link: https://cv.rcchen.dpdns.org/cn
 #  - icon: project
 #    name: 项目名称
 #    desc: 项目详细描述
