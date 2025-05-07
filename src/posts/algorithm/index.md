@@ -30,3 +30,4 @@ tag:
 ### 19. [KMP Algorithm](./19.md)
 ### 20. [Distributed Consistency Algorithms](./20.md)
 ### 21. [LeetCode Question 146](./21.md)
+### 22. [Summary](./summary.md)
