@@ -4,7 +4,7 @@ import { enNavbar, zhNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://crc011220.github.io/personalweb/",
+  hostname: "https://crc011220.github.io/",
 
   author: {
     name: "Richard Chen",

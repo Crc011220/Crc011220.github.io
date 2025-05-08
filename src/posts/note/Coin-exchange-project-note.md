@@ -735,4 +735,3 @@ public class MyWebSocketHandler implements IWsMsgHandler {
 ```
 
 This would allow real-time messaging over WebSockets in a Spring Boot application.
-

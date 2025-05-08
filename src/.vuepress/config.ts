@@ -4,7 +4,7 @@ import theme from "./theme.js";
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 
 export default defineUserConfig({
-  base: "/personalweb/",
+  base: "/",
   locales: {
     "/": {
       lang: "en-US",
