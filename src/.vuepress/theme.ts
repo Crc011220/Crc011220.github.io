@@ -14,7 +14,7 @@ export default hopeTheme({
 
   logo: "https://img.taotu.cn/ssd/ssd4/1/2024-07-08/1_e36ceb8c09656a291a6f0a33178736f9.webp",
 
-  repo: "Crc011220/personalweb",
+  repo: "Crc011220/Crc011220.github.io",
   fullscreen: true,
   docsDir: "src",
 
