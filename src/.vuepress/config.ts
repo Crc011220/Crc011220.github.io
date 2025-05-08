@@ -20,9 +20,8 @@ export default defineUserConfig({
 
   theme,
 
-
-
-  // head: [
+  head: [
+    ["link", { rel: "icon", href: "/mac.ico" }],
     // [
     //   "script",
     //   {
@@ -30,7 +29,7 @@ export default defineUserConfig({
     //     async: true,
     //   },
     // ],
-  // ],
+  ],
 
   plugins: [
     docsearchPlugin({
