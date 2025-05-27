@@ -33,11 +33,11 @@ export default defineUserConfig({
 
   plugins: [
     docsearchPlugin({
-      appId: "6264MA721Y",
+      appId: "HQLAF3SKP7",
 
-      apiKey: "006ddc432bcbe37fa6582bde28e2a386",
+      apiKey: "4d988bf659cf371283265b50e983f30d",
 
-      indexName: "crc011220io",
+      indexName: "rcchen-dpdns",
       locales: {
         '/': {
           placeholder: 'Search Blogs',
