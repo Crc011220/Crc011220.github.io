@@ -8,7 +8,7 @@ tag:
 ---
 
 # Sealos
-![Sealos](https://usw.sealos.io/)
+[Sealos](https://usw.sealos.io/)
 - Sealos is a container management platform that provides a unified interface for managing containerized applications, including application deployment, monitoring, logging, and alerting.
 - Sealos can connect projects to local IDEs for development and debugging.
 - Sealos can create virtual machines and deploy applications to them.
