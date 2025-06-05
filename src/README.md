@@ -30,15 +30,15 @@ projects:
     desc: A custom user interface of DeepSeek
     link: https://github.com/Crc011220/ui
 
+ - icon: project
+   name: Cron-Job-Platform
+   desc: A script execution platform with cron job support
+   link: https://github.com/Crc011220/cron
+
   - icon: link
     name: Cv
     desc: Online Resume
     link: https://cv.rcchen.dpdns.org
-#
-#  - icon: friend
-#    name: friend name
-#    desc: Detailed description of friend
-#    link: https://link.to.your.friend
 #
 #  - icon: https://theme-hope-assets.vuejs.press/logo.svg
 #    name: custom item
