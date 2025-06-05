@@ -30,10 +30,10 @@ projects:
     desc: A custom user interface of DeepSeek
     link: https://github.com/Crc011220/ui
 
- - icon: project
-   name: Cron-Job-Platform
-   desc: A script execution platform with cron job support
-   link: https://github.com/Crc011220/cron
+  - icon: project
+    name: Cron
+    desc: A script execution platform with cron job support
+    link: https://github.com/Crc011220/cron
 
   - icon: link
     name: Cv
