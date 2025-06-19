@@ -7,15 +7,7 @@ tag:
   - Index
 ---
 
-
----
-icon: pen-to-square
-date: 2025-03-02
-category:
-  - Learning Records
-tag:
-  - Unimelb
----
+# Machine Learning
 | Algorithm                | Type            | Generative/Discriminative | Linear/Non-linear | Notes                                                                 |
 |--------------------------|-----------------|---------------------------|-------------------|-----------------------------------------------------------------------|
 | Naive Bayes              | Classification  | Generative                | Linear            | Assumes feature independence, uses Bayes' theorem                     |
