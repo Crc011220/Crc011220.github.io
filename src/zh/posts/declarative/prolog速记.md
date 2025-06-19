@@ -35,9 +35,9 @@ tag:
 | `X @> Y`    | 字典序大于          | `'zoo' @> 'apple'` → `true`      |
 | `\+`        | 逻辑非             | `\+ true` → `false`              |
 
-var(Term) means Term is an unbound variable
-nonvar(Term) means Term is not an unbound variable
-ground(Term) means Term contains no unbound variables
+- `var(Term)` means `Term` is an unbound variable
+- `nonvar(Term)` means `Term` is not an unbound variable
+- `ground(Term)` means `Term` contains no unbound variables
 
 ---
 
@@ -113,7 +113,6 @@ ground(Term) means Term contains no unbound variables
 | `trace`              | 开启逐步调试              | `trace.` → 开始追踪执行                          |
 | `notrace`            | 关闭调试                | `notrace.`                                 |
 | `listing`            | 显示当前定义的谓词规则         | `listing(largest_city/2).`                 |
-| `print_term(T, [O])` | 美化打印结构体（SWI-Prolog） | `print_term(foo(bar,baz), [output(user)])` |
 
 ---
 

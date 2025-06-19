@@ -153,6 +153,8 @@ mymaximum (ListNode x xs) = maxHelper x xs
 ```haskell
 -- 二叉树
 data BST a = Empty | Node (BST a) a (BST a) deriving (Eq, Show)
+-- 多叉树
+data Tree a = Node a [Tree a] deriving (Eq, Show)
 
 -- 1. 最大深度
 maxDepth :: BST a -> Int
