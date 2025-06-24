@@ -24,7 +24,7 @@ sticky: true
 **Master of Information Technology, Specializing in Computing**  
 *The University of Melbourne*  
 _Feb 2024 - Dec 2025_  
-*Relevant Courses*: Programming and Software Development, Internet Technology, Algorithms and Complexity, Database Systems and Information Modelling, Distributed Systems, Software Process and Management, Machine Learning, Cluster and Cloud Computing, Declarative Programming, Information Visualization, Mobile Computing Systems Programming
+*Relevant Courses*: Programming and Software Development, Internet Technology, Algorithms and Complexity, Database Systems and Information Modelling, Distributed Systems, Software Process and Management, Machine Learning, Cluster and Cloud Computing, Declarative Programming, Information Visualization
 
 **Bachelor of Arts, Major in Psychology, Minor in Economy**  
 *The University of Melbourne*  
@@ -34,10 +34,10 @@ _Aug 2020 - Dec 2023_
 ---
 
 ## TECHNICAL SKILLS
-- **Programming Languages**: **Java**, Python, C#, JavaScript, TypeScript, SQL, Shell, Lua, R
+- **Programming Languages**: **Java**, Python, C#, JavaScript, TypeScript, SQL, Shell, Lua, R, Haskell, Prolog
 - **Frameworks**: **Spring Boot**, Spring Cloud, Django, MyBatis, Node.js, Express.js, Next.js, Vue.js, WordPress
-- **Middleware**: Redis, Elasticsearch, RabbitMQ, Kafka, NGINX
-- **Databases**: MySQL, PostgreSQL, MongoDB
+- **Databases**: MySQL, PostgreSQL, Redis, Elasticsearch, MongoDB
+- **Message Queue**: RabbitMQ, Kafka
 - **Development Tools**: Git, Docker, Kubernetes, Linux, Postman, Maven, JMeter, Swagger, Selenium
 - **Certifications**: AWS Cloud Practitioner
 ---
@@ -45,32 +45,44 @@ _Aug 2020 - Dec 2023_
 ## INTERNSHIPS
 
 ### Full Stack Development Intern
-*China Merchants Bank, Hangzhou, Zhejiang*  
-_Nov 2024 - Feb 2025_<br>
-_Nov 2023 - Feb 2024_  
-- Implemented and optimized Excel data import and export functionality in a Spring Boot and Vue.js environment, creating tailored RESTful APIs for advanced data manipulation, led to a 50% increase in data management efficiency and productivity
-- Mastered and deployed Selenium and Scrapy for automated data scraping, achieving daily targets from multiple sources, enhancing data accuracy by 25%, and ensuring seamless project continuity
-- Developed and optimized an Auto-Complete interface for system configuration by using Spring Boot and MyBatis, cutting maintenance costs by 50% and reducing runtime by 1.5 minute 
-- Encapsulated a notification API with Spring Boot and MyBatis for internal emails, app messages, and SMS. Features like queue management and custom configurations improved colleague productivity by 40%
-- Implemented an automated document security check API with Spring Boot and XCode, an internal low code platform, reducing manual checks and cutting security check times by 75%
-- Learned and Applied prompt engineering to create a document generation robot on internal AI market that automates the creation of detailed design documents, increasing documentation efficiency by 60%
-- Gained hands-on experience with internal cloud native management platforms and CI/CD pipelines, participating in the deployment of various interface projects, ensuring smooth integration and delivery
+*JD.com*  
+_May 2025 - July 2025_
+- **Scheduled Task Dispatch System** (Spring Boot + Spring Security + MyBatis Plus + Redis + React)
+  - Developed an enterprise-level distributed scheduling platform for timed tasks using Spring Boot, Spring Security, MyBatis Plus, Redis, and React. Built the core scheduling engine with Spring Boot and XXL-JOB, supporting Cron expression configuration and task failover.
+  - Designed a multi-layer fault-tolerant architecture, achieving zero single-point failures through application clustering, master-slave database setup, and distributed task scheduling, ensuring 99.9% system availability with automatic failover and uninterrupted service.
+  - Designed and implemented a comprehensive RBAC (Role-Based Access Control) system, utilizing Spring Security and JWT for fine-grained access control, ensuring system security and compliance with user operations.
+  - Developed a React and TypeScript-based front-end monitoring dashboard, integrating real-time task status display, execution log queries, and performance statistics charts, enhancing operational monitoring efficiency and user experience.
+  - Established an automated quality assurance process, integrating Git Hooks for pre-commit validation and GitHub Actions for continuous integration, ensuring code quality and system stability with JUnit 5 unit testing framework.
 
-### Junior IT All Rounder  
-*AAkonsult PTY LTD, Melbourne, Victoria*  
-_Jul 2024 - Nov 2024_  
-- Developed a portal to boost appearance and functionality of Payment Forms deploying Salesforce Experience Cloud Platform by using CSS3.
-- Self-training and receiving mentoring to become proficient in Salesforce. Solving day-to-day cases and contributing to the Knowledgebase and App content
-- Enhanced user experience and increased visual appeal by 30% across multiple online platforms by using Figma and Statamic, resulting in a 20% increase in user engagement
-- Developed a user-friendly web application using JavaScript that automates calculations for user inputs and exports results, achieving a 50% improvement in calculation efficiency
-- Conducted batch analysis of user inputs using Python, leading to significant enhancements in the existing knowledge base and resulting in a 70% increase in efficiency
+### Full Stack Development Intern
+*China Merchants Bank*  
+_November 2024 - February 2025_
+_November 2023 - February 2024_
+- **Internal Lean Management Platform** (Spring Boot + Vue.js + Redis + Kafka + ECS)
+  - Led the development of a general-purpose Excel data processing framework using Spring Boot, Vue.js, Redis, Kafka, and ECS, supporting data parsing and reading/writing for any structured headers, adapting to various business data formats. Achieved stable performance for importing and exporting data at a scale of 100,000 entries through asynchronous batch processing, data sharding, and cache optimization, providing foundational support for multiple business modules.
+  - Designed and implemented an automated generation and validation process for software development artifacts (e.g., test reports, design documents). Built an intelligent review bot using Prompt Engineering and domain knowledge bases, supporting automatic document modification suggestions, reducing manual review by approximately 75%, and effectively enhancing the standardization and delivery efficiency of development documentation.
+- **Business Marketing Promotion Management System** (Spring Boot + Nacos + Selenium + Scrapy)
+  - Led the construction of a unified notification microservice system, encapsulating components for email, application messages, and SMS sending. Utilized Nacos for configuration management and service registration, supporting flexible invocation and dynamic expansion, enhancing the uniformity and maintainability of inter-system message notifications.
+  - Participated in the development of the opportunity mining module, implementing multi-site automated data collection using Selenium and Scrapy, supporting rule configuration and content filtering, improving the coverage and quality of marketing data.
+- **Cloud-Native Management Platform and CI/CD Pipeline Practice**
+  - Led the deployment and integration of multiple Spring Boot interface projects, practicing cloud-native service governance, ensuring the stability of the system launch process and continuous delivery capability.
+
+### Junior IT Generalist
+*AAkonsult PTY LTD*  
+_July 2024 - November 2024_
+- **Payment Form Portal Website Development** (Salesforce Experience Cloud + Apex + Python + React + Figma)
+  - Developed a payment form portal website using Salesforce Experience Cloud, Apex, Python, React, and Figma, optimizing the interactive interface and functional modules to enhance user operation fluency.
+  - Learned and utilized Apex to develop backend business logic (e.g., data query interfaces, status update functions), improving code quality through debugging and code review, familiarizing with Salesforce platform workflows.
+  - Developed an automated calculation tool using React, enabling real-time validation of user input and one-click export of results, improving data processing efficiency.
+  - Built batch analysis scripts for user input using Python, optimizing the data cleaning and classification process of the knowledge base, enhancing analysis efficiency.
+  - Designed high-fidelity prototypes using Figma, combined with Statamic for multi-platform dynamic content management, enhancing visual appeal and increasing average user dwell time.
 
 ---
 
 ## PROJECT EXPERIENCES
 
 ### Crypto Currency Trading System
-*Mar 2025 - Still ongoing*  
+*Mar 2025 - May 2025*  
 *Technologies*: Spring Boot, Spring Cloud, Spring Security, MyBatis-Plus, Redis, JWT, AWS, Docker, RocketMQ, Disruptor
 - Designed a microservices architecture with Spring Cloud, including services like GatewayService, AuthorizationService, MemberService, AdminService, FinanceService, and ExchangeService. Leveraged Nacos for service discovery and configuration management, OpenFeign for remote procedure calls, and LoadBalancer for server-side load balancing
 - Implemented a unified authentication and authorization mechanism using Spring Security OAuth2.0 and JWT, with secure RESTful API communication supported by OpenFeign for inter-service calls
