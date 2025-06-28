@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: home
 title: Blog Home
-heroImage: https://img.taotu.cn/ssd/ssd4/1/2024-07-08/1_9d9a8b16247d0f06f2f462b46cd6f07a.webp
+heroImage: .vuepress/public/yier.jpg
 bgImage: https://images.pexels.com/photos/547115/pexels-photo-547115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 bgImageDark: https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 heroText: Discover Richard Chen's Personal Journey
