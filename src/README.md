@@ -38,7 +38,7 @@ projects:
   - icon: link
     name: Cv
     desc: Online Resume
-    link: https://cv.rcchen.dpdns.org
+    link: https://blog.rcchen.dpdns.org/cv/en
 #
 #  - icon: https://theme-hope-assets.vuejs.press/logo.svg
 #    name: custom item
