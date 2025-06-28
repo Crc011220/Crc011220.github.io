@@ -12,7 +12,7 @@ export default hopeTheme({
   },
   iconAssets: "fontawesome-with-brands",
 
-  logo: "./public/bubu.jpg",
+  logo: "/bubu.jpg",
 
   repo: "Crc011220/Crc011220.github.io",
   fullscreen: true,
