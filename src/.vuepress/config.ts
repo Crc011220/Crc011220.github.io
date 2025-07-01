@@ -8,12 +8,12 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "Richard Chen",
-      description: "Richard Chen's personal blog",
+      title: "Ruochen Chen",
+      description: "Ruochen Chen's personal blog",
     },
     "/zh/": {
       lang: "zh-CN",
-      title: "Richard Chen",
+      title: "Ruochen Chen",
       description: "若尘的博客",
     },
   },

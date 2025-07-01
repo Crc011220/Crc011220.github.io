@@ -12,7 +12,7 @@ sticky: true
 
 # About Me
 
-# Richard Chen
+# Ruochen Chen
 
 - Email: [ruocchen1220@gmail.com](mailto:ruocchen1220@gmail.com)
 - Phone: +61 0478396285

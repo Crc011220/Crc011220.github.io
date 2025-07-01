@@ -7,7 +7,7 @@ export default hopeTheme({
   hostname: "https://crc011220.github.io/",
 
   author: {
-    name: "Richard Chen",
+    name: "Ruochen Chen",
     // url: "https://mister-hope.com",
   },
   iconAssets: "fontawesome-with-brands",

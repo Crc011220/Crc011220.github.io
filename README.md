@@ -1,6 +1,6 @@
 # Personal Website/Blog
 
-Welcome to Richard's personal website/blog, where I share my learning journey, thoughts on various topics, and personal insights.
+Welcome to Ruochen's personal website/blog, where I share my learning journey, thoughts on various topics, and personal insights.
 
 ## Features
 

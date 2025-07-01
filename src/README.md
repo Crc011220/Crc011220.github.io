@@ -6,7 +6,7 @@ title: Blog Home
 heroImage: /yier.jpg
 bgImage: https://images.pexels.com/photos/547115/pexels-photo-547115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 bgImageDark: https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
-heroText: Discover Richard Chen's Personal Journey
+heroText: Discover Ruochen Chen's Personal Journey
 tagline: Sharing Insights on Tech, Life, and Creativity
 heroFullScreen: true
 projects:
