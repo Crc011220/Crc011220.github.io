@@ -343,11 +343,11 @@ Stride（步长）指的是**卷积核在图像上滑动时的步伐大小**，�
 3. Stride: 步长
 
 那计算方法如下图所示:
-
+ 
 1. 输入图像大小: W x W
 2. 卷积核大小: F x F
-3. Stride: S
-4. Padding: P
+3. Stride步长: S
+4. Padding填充: P
 5. 输出图像大小: N x N
 
 <img src='assets/11.png' />
