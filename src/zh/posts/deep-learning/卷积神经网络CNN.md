@@ -686,7 +686,7 @@ if __name__ == '__main__':
     plt.figure(figsize=(2, 2))
     plt.imshow(train_dataset.data[1])
     plt.title(train_dataset.targets[1])
-    plt.show()
+    plt.show() 
 ```
 
 **输出结果：**
