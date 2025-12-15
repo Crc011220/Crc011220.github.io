@@ -790,8 +790,8 @@ def train(model, train_dataset):
         start = time.time()  # 开始时间
         # 遍历数据进行网络训练
         for x, y in dataloader:
-            model.train()
-            output = model(x)
+            model.train() # 模型切换训练模式
+            output = model(x) # 模型预测 y预测值
             loss = criterion(output, y)  # 计算损失
             optimizer.zero_grad()  # 梯度清零
             loss.backward()  # 反向传播
