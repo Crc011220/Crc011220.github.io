@@ -24,6 +24,7 @@ export default hopeTheme({
       GitHub: "https://github.com/Crc011220",
       Gitlab: "https://gitlab.com/ruocchen1220",
       Gmail: "mailto:ruocchen1220@gmail.com",
+      Mail: "mailto:crc011220@163.com",
       Steam: "https://steamcommunity.com/profiles/76561198799729482/",
     },
   },
