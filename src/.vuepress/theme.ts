@@ -42,7 +42,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "An IT Student @ University of Melbourne",
+        description: "An IT Graduate @ University of Melbourne",
         intro: "/intro.html",
       },
 
@@ -66,7 +66,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "墨尔本大学计算机在读学生",
+        description: "墨尔本大学计算机毕业学生",
         intro: "/zh/intro.html",
       },
 
