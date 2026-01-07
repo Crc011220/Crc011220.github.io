@@ -8,6 +8,14 @@ export const enNavbar = navbar([
     prefix: "/posts/",
     children: [
       {
+        text: "AI",
+        icon: "pen-to-square",
+        prefix: "ai/",
+        children: [
+          { text: "AI Contents", icon: "pen-to-square", link: "index" },
+        ],
+      },
+      {
         text: "Algorithm",
         icon: "pen-to-square",
         prefix: "algorithm/",
@@ -81,6 +89,22 @@ export const enNavbar = navbar([
         ],
       },
       {
+        text: "Istio",
+        icon: "pen-to-square",
+        prefix: "istio/",
+        children: [
+          { text: "Istio Contents", icon: "pen-to-square", link: "index" },
+        ],
+      },
+      {
+        text: "JD",
+        icon: "pen-to-square",
+        prefix: "jd/",
+        children: [
+          { text: "JD Notes", icon: "pen-to-square", link: "note" },
+        ],
+      },
+      {
         text: "Kubernetes",
         icon: "pen-to-square",
         prefix: "kubernetes/",
@@ -120,6 +144,14 @@ export const enNavbar = navbar([
         prefix: "note/",
         children: [
           { text: "Notes", icon: "pen-to-square", link: "index" },
+        ],
+      },
+      {
+        text: "Spark",
+        icon: "pen-to-square",
+        prefix: "spark/",
+        children: [
+          { text: "Spark Contents", icon: "pen-to-square", link: "index" },
         ],
       },
       {
