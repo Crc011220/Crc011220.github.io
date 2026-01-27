@@ -2,7 +2,7 @@
 icon: pen-to-square
 date: 2026-01-06
 category:
-  - Job Journal
+  - Job Notes
 tag:
   - China Merchant Bank
 ---
