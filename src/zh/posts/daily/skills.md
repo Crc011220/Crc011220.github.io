@@ -11,29 +11,24 @@ tag:
 
 ## 一、什么是 Claude Skills？
 
-Claude Skills 是由 Anthropic 公司推出的一项功能模块，旨在扩展 Claude AI 助手的能力，使其能够执行特定的任务和工作流程。Skills 可以理解为 Claude 的"技能包"，包含指令、脚本和资源，Claude 会在需要时动态加载这些技能，以提高在专业任务上的表现。一些好用的技能可以参考[Awesome Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills)。目前cursor还无法使用Claude Skills，但是可以通过Claude Code来使用。
+Claude Skills 是由 Anthropic 公司推出的一项功能模块，旨在扩展 Claude AI 助手的能力，使其能够执行特定的任务和工作流程。Skills 可以理解为 Claude 的"技能包"，包含指令、脚本和资源，Claude 会在需要时动态加载这些技能，以提高在专业任务上的表现。一些好用的技能可以参考[Awesome Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills)。在cursor中，在.cursor/skills目录下可以查看已经安装的技能。
 
 ## 二、Claude Skills 的主要特点
 
-### 1. 可组合性（Composability）
-- 多个技能可以组合使用
-- Claude 会自动识别并协调所需的技能
-- 能够完成复杂的多步骤工作流程
+### 渐进式披露（Progressive Disclosure）
 
-### 2. 可移植性（Portability）
-- 技能采用统一的格式
-- 确保在 Claude 的各个应用程序中一致运行
-- 支持 Claude 应用、Claude Code 和 API 集成
+Claude Skills 采用**按需加载**的设计：只有在用户任务与某技能相关时，Claude 才会动态加载该技能，而不是在对话开始时一次性加载所有能力。这样可以让模型上下文保持聚焦，提高响应质量和准确性。
 
-### 3. 高效性（Efficiency）
-- Claude 仅在需要时加载必要的技能组件
-- 保持运行速度的同时获取专业知识
-- 避免不必要的资源消耗
+**与 MCP（Model Context Protocol）的对比：**
 
-### 4. 强大性（Power）
-- 技能可以包含可执行代码
-- 适用于文件创建、解析和分析等任务
-- 比传统编程更可靠和高效
+| 维度 | Claude Skills | MCP |
+|------|---------------|-----|
+| **加载方式** | 按需、渐进式加载，仅加载与当前任务相关的技能 | 通常在一开始加载全部工具和 Schema |
+| **Token 消耗** | 仅加载当前任务所需的技能，上下文更精简 | 需要加载大量工具描述和 Schema，占用较多 token |
+| **模型表现** | 上下文更聚焦，利于保持准确性和专注度 | 大量无关上下文可能稀释模型注意力，影响准确性 |
+| **适用场景** | 任务导向、技能边界清晰的场景 | 需要同时暴露多种工具的通用助手场景 |
+
+简而言之：MCP 倾向于「全量加载」，Skills 倾向「按需加载」，后者在 token 效率与准确率上通常更有优势。
 
 ## 三、Claude Skills 的类型
 
@@ -102,6 +97,8 @@ Claude Skills 是由 Anthropic 公司推出的一项功能模块，旨在扩展 
 2. **自动生成**：Claude 会将其转换为格式正确的 Skill 文件
 3. **保存文件**：保存 Claude 创建的 Skill 文件
 4. **上传技能**：在设置的"技能"部分上传技能文件
+
+- claude提供了skill-creator的skill，可以快速创建技能。
 
 #### 方法二：手动创建
 1. **创建技能文件夹**：包含指令和资源的文件夹
