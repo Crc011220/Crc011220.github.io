@@ -123,7 +123,7 @@ Claude Skills 采用**按需加载**的设计：只有在用户任务与某技�
 ### 基本结构
 ```
 skill-name/
-├── instructions.md      # 技能指令（必需）
+├── SKILL.md      # 技能指令（必需）
 ├── resources/          # 资源文件夹（可选）
 │   ├── example1.txt
 │   └── example2.txt
@@ -133,7 +133,7 @@ skill-name/
 
 ### 文件说明
 
-#### 1. instructions.md（技能指令）
+#### 1. SKILL.md（技能指令）
 - **必需文件**：每个技能必须包含此文件
 - **内容**：描述技能的目的、使用方法和注意事项
 - **格式**：Markdown 格式

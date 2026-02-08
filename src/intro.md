@@ -42,6 +42,11 @@ _Aug 2020 - Dec 2023_
 - **Certifications**: AWS Cloud Practitioner
 ---
 
+## WORK EXPERIENCES
+### Software Engineer
+*China Merchants Bank (Credit Card Center)*  
+_January 2026 - Present_
+
 ## INTERNSHIPS
 
 ### Full Stack Development Intern
@@ -55,7 +60,7 @@ _May 2025 - July 2025_
   - Established an automated quality assurance process, integrating Git Hooks for pre-commit validation and GitHub Actions for continuous integration, ensuring code quality and system stability with JUnit 5 unit testing framework.
 
 ### Full Stack Development Intern
-*China Merchants Bank*  
+*China Merchants Bank (Branch)*  
 _November 2024 - February 2025_
 _November 2023 - February 2024_
 - **Internal Lean Management Platform** (Spring Boot + Vue.js + Redis + Kafka + ECS)
