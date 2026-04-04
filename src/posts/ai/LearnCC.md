@@ -64,6 +64,7 @@ continue    [Layer 2: auto_compact]
 - Layer 1 -- micro_compact: Before each LLM call, replace old tool results with placeholders.
 - Layer 2 -- auto_compact: When tokens exceed threshold, save full transcript to disk, then ask the LLM to summarize.
 - Layer 3 -- manual compact: The compact tool triggers the same summarization on demand.
+
 ```python
 def agent_loop(messages: list):
     while True:
@@ -87,7 +88,6 @@ def agent_loop(messages: list):
 
 ### Scan Board, Claim Tasks
 - Teammates scan the board and claim tasks themselves; no need for the lead to assign each one
-
 
 ### Isolate by Directory
 - Each works in its own directory; tasks manage goals, worktrees manage directories, bound by ID
