@@ -84,6 +84,10 @@ def agent_loop(messages: list):
 
 ### Shared Communication Rules
 - One request-response pattern drives all team negotiation
+
 ### Scan Board, Claim Tasks
+- Teammates scan the board and claim tasks themselves; no need for the lead to assign each one
+
 
 ### Isolate by Directory
+- Each works in its own directory; tasks manage goals, worktrees manage directories, bound by ID
