@@ -81,3 +81,9 @@ def agent_loop(messages: list):
 
 ### Teammates + Mailboxes
 - Teams use a leader-worker pattern. Each teammate has a file-based mailbox inbox.
+
+### Shared Communication Rules
+- One request-response pattern drives all team negotiation
+### Scan Board, Claim Tasks
+
+### Isolate by Directory
