@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e9d9b5630dc7d92d",
+        "id": "d68e53adb98f5d24",
         "type": "tabs",
         "children": [
           {
-            "id": "990b7052b043a235",
+            "id": "61cac2c4541e0c4f",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
         ]
@@ -158,12 +158,12 @@
               "title": "大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,6 +176,12 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "990b7052b043a235",
-  "lastOpenFiles": []
+  "active": "61cac2c4541e0c4f",
+  "lastOpenFiles": [
+    "src/zh/posts/daily/attention.md",
+    "README.md",
+    "未命名.canvas",
+    "2026-04-28.md",
+    "src/zh/posts/daily/CC-ContextManagement.md"
+  ]
 }
