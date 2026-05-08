@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d68e53adb98f5d24",
+        "id": "e459289c346d5c93",
         "type": "tabs",
         "children": [
           {
-            "id": "61cac2c4541e0c4f",
+            "id": "d3888bcb594d8d03",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "src/zh/posts/daily/openclaw.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "openclaw"
             }
           }
         ]
@@ -108,11 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "src/zh/posts/daily/openclaw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "openclaw 的出链列表"
             }
           },
           {
@@ -150,16 +155,27 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "src/zh/posts/daily/openclaw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "openclaw 的大纲"
+            }
+          },
+          {
+            "id": "8186deae88aa5e69",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -167,6 +183,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "deepseek-ai-assistant:Open deepseek AI assistant": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -176,12 +194,20 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "61cac2c4541e0c4f",
+  "active": "d3888bcb594d8d03",
   "lastOpenFiles": [
-    "src/zh/posts/daily/attention.md",
+    "src/zh/posts/daily/harness_eng.md",
+    "src/zh/posts/daily/good_mcp.md",
+    "src/zh/posts/daily/excalidraw.md",
+    "src/zh/posts/daily/decoder-only.md",
+    "src/zh/posts/daily/dcf.md",
+    "src/zh/posts/daily/CC-ContextManagement.md",
+    "src/zh/posts/daily/agent框架.md",
+    "src/zh/posts/daily/vibe_coding_skills.md",
     "README.md",
+    "src/zh/posts/daily/agent.md",
+    "src/zh/posts/daily/attention.md",
     "未命名.canvas",
-    "2026-04-28.md",
-    "src/zh/posts/daily/CC-ContextManagement.md"
+    "2026-04-28.md"
   ]
 }
