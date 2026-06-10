@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "7363289a99f01ffe",
+        "id": "f83946213be993f1",
         "type": "tabs",
         "children": [
           {
-            "id": "e766ac91d5c7e907",
+            "id": "f8cbf6e6243369b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/zh/posts/daily/AI 光互联.md",
+                "file": "src/zh/posts/finance/11-如何投资美股.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI 光互联"
+              "title": "11-如何投资美股"
+            }
+          },
+          {
+            "id": "4df89c4e9944d049",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/zh/posts/finance/美国 6.9.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "美国 6.9"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -114,13 +129,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/zh/posts/daily/AI 光互联.md",
+                "file": "src/zh/posts/finance/美国 6.9.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "AI 光互联 的大纲"
+              "title": "美国 6.9 的大纲"
             }
           },
           {
@@ -208,7 +223,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 342.5
+    "width": 389.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -227,34 +242,34 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e766ac91d5c7e907",
+  "active": "4df89c4e9944d049",
   "lastOpenFiles": [
+    "src/zh/posts/finance/康波周期.md",
+    "src/zh/posts/finance/美国 6.9.md",
+    "src/zh/posts/finance/投资.md",
+    "src/zh/posts/finance/11-如何投资美股.md",
+    "src/zh/posts/daily/财报指标.md",
+    "src/zh/posts/finance/美股前20公司.md",
+    "src/zh/posts/daily/存储芯片产业链解析.md",
+    "src/zh/posts/daily/superpowers.md",
+    "src/zh/posts/finance/3-股票市场入门.md",
+    "src/zh/posts/finance/2-股票基础知识.md",
+    "src/zh/posts/finance/1-金融基础概念.md",
+    "src/zh/posts/finance/4-股票分析方法.md",
     "src/zh/posts/daily/AI 光互联.md",
+    "src/zh/posts/daily/AI 算力系统核心模块与竞争格局.md",
+    "src/zh/posts/daily/dcf.md",
+    "src/zh/posts/daily/泊松过程.md",
+    "src/zh/posts/daily/智能体Dreams.md",
     "src/zh/posts/cmb/分期业务.md",
     "src/zh/posts/cmb/四层架构.md",
     "src/zh/posts/cmb/发布.md",
     "src/zh/posts/cmb/等额本息和等本等息.md",
     "src/zh/posts/daily/芯片制造原理.md",
-    "src/zh/posts/daily/存储芯片产业链解析.md",
-    "src/zh/posts/finance/美股前20公司.md",
     "src/zh/posts/finance/索罗斯.md",
     "src/zh/posts/finance/index.md",
     "src/zh/posts/daily/CE-project.md",
     "README.md",
-    "未命名.md",
-    "src/zh/posts/daily/智能体Dreams.md",
-    "src/zh/posts/daily/agent框架.md",
-    "src/zh/posts/daily/AI 算力系统核心模块与竞争格局.md",
-    "src/zh/posts/daily/agent.md",
-    "src/zh/posts/cmb/feign.md",
-    "src/zh/posts/cmb/concept.md",
-    "src/zh/posts/daily/commodities.md",
-    "src/zh/posts/daily/Codex教学.md",
-    "src/zh/posts/daily/ClaudeCode-学习笔记综合.md",
-    "src/zh/posts/daily/上下文长度.md",
-    "src/zh/posts/daily/财报指标.md",
-    "src/zh/posts/daily/lora.md",
-    "copilot/copilot-conversations/Dreams_Agent_Markdown_Enhancement@20260511_212506.md",
     "未命名.base",
     "未命名 1.base",
     "copilot/copilot-conversations",
