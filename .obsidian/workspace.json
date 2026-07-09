@@ -4,81 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "967f8f44bbbd45aa",
+        "id": "2f116948de8e252a",
         "type": "tabs",
         "children": [
           {
-            "id": "3888154247b1d315",
+            "id": "e770f454468c10fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/zh/posts/finance/金融业.md",
+                "file": "src/zh/posts/news/2026-07-09晨间简报.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "金融业"
-            }
-          },
-          {
-            "id": "a09ef3a3405be49f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/zh/posts/finance/2-股票基础知识.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "2-股票基础知识"
-            }
-          },
-          {
-            "id": "4e4b901ba564c6da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/zh/posts/finance/光模块分工协作链.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "光模块分工协作链"
-            }
-          },
-          {
-            "id": "4ab0ec82641f2931",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/zh/posts/finance/康波周期.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "康波周期"
-            }
-          },
-          {
-            "id": "8b63284bc5af1477",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/zh/posts/finance/Call和Put.md",
-                "mode": "preview",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Call和Put"
+              "title": "2026-07-09晨间简报"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "金融危机",
+                "query": "superpow",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -135,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 248.5
+    "width": 340.5
   },
   "right": {
     "id": "9da51a798f87b630",
@@ -171,13 +114,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/zh/posts/finance/存储产业链分工协作链.md",
+                "file": "src/zh/posts/news/2026-07-09晨间简报.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "存储产业链分工协作链 的大纲"
+              "title": "2026-07-09晨间简报 的大纲"
             }
           },
           {
@@ -284,38 +227,39 @@
       "bases:新建数据库": false
     }
   },
-  "active": "4e4b901ba564c6da",
+  "active": "e770f454468c10fa",
   "lastOpenFiles": [
-    "src/zh/posts/finance/2-股票基础知识.md",
-    "src/zh/posts/finance/金融业.md",
-    "src/zh/posts/daily/commodities.md",
-    "src/zh/posts/finance/康波周期.md",
-    "src/zh/posts/finance/做庄.md",
-    "src/zh/posts/finance/未命名",
-    "src/zh/posts/finance/Call和Put.md",
-    "src/zh/posts/daily/rebase.md",
-    "src/zh/posts/daily/superpowers vs agent-skills 核心区别.md",
-    "未命名.base",
-    "src/zh/posts/finance/光模块分工协作链.md",
-    "src/zh/posts/finance/AAOI.md",
-    "src/zh/posts/finance/全球央行在高债务环境下的利率困境.md",
-    "src/zh/posts/finance/做T.md",
+    "src/zh/posts/news/2026-07-08晨间简报.md",
+    "src/zh/posts/news/2026-07-09晨间简报.md",
+    "src/zh/posts/news/2026-07-05晨间简报.md",
+    "src/zh/posts/news/2026-07-06晨间简报.md",
+    "src/zh/posts/news/2026-07-07晨间简报.md",
+    "src/zh/posts/cmb/培训.md",
+    "src/zh/posts/news/2026-07-04晨间简报.md",
+    "src/zh/posts/finance/经济周期.md",
     "src/zh/posts/finance/美股 2025.6.9.md",
-    "src/zh/posts/finance/投资.md",
-    "src/zh/posts/kafka/intro.md",
-    "src/zh/posts/java8/函数式编程.md",
-    "src/zh/posts/daily/model-platforms.md",
-    "src/zh/posts/finance/光模块.md",
-    "src/zh/posts/finance/一级市场和二级市场.md",
-    "Pasted image 20260621214843.png.md",
-    "src/zh/posts/finance/存储产业链分工协作链.md",
-    "Excalidraw/Drawing 2026-06-22 10.47.28.excalidraw.md",
+    "src/zh/posts/daily/Loop Engineering.md",
+    "src/zh/posts/daily/superpowers vs agent-skills 核心区别.md",
+    "src/zh/posts/news",
+    "src/zh/posts/daily/superpowers.md",
+    "src/zh/posts/finance/韩国存储.md",
+    "src/zh/posts/finance/经济机器是怎样运行的.md",
+    "src/zh/posts/declarative/haskell速记.md",
+    "src/zh/posts/daily/rebase.md",
+    "src/zh/posts/daily/财报指标.md",
+    "src/zh/posts/finance/Call和Put.md",
+    "src/zh/posts/finance/做庄.md",
+    "src/zh/posts/finance/4-股票分析方法.md",
+    "src/zh/posts/finance/2-股票基础知识.md",
+    "src/zh/posts/finance/做T.md",
+    "src/zh/posts/finance/金融业.md",
+    "src/zh/posts/finance/光模块分工协作链.md",
+    "src/zh/posts/finance/康波周期.md",
+    "src/zh/posts/daily/commodities.md",
+    "src/zh/posts/finance/未命名",
+    "未命名.base",
     "Excalidraw",
-    "src/README.md",
-    "README.md",
-    "2026-06-21.md",
     "Pasted image 20260621214843.png",
-    "src/zh/posts/daily/AI 光互联.md",
     "未命名 1.base",
     "copilot/copilot-conversations",
     "copilot/copilot-custom-prompts",
