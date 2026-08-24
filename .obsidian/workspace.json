@@ -4,11 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "2f116948de8e252a",
+        "id": "7ef617fc3af46e70",
         "type": "tabs",
         "children": [
           {
-            "id": "ac8659ced7a1f691",
+            "id": "0e8e87253bc54b8b",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/zh/posts/cmb/分期业务.md",
+                "mode": "preview",
+                "source": true
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "分期业务"
+            }
+          },
+          {
+            "id": "1bb1cd442b0c9141",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/zh/posts/cmb/concept.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "concept"
+            }
+          },
+          {
+            "id": "c192877609209909",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,49 +52,49 @@
             }
           },
           {
-            "id": "ff311e7bd5665592",
+            "id": "bbfeae316f98b7b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/zh/posts/books/小岛经济学.md",
-                "mode": "source",
+                "file": "src/zh/posts/finance/离岸金融.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "小岛经济学"
+              "title": "离岸金融"
             }
           },
           {
-            "id": "b9c7ae2cde306d70",
+            "id": "3d11d2eabc16fe41",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/zh/posts/books/纳瓦尔宝典.md",
-                "mode": "source",
+                "file": "src/zh/posts/news/2026-08/2026-08-24晨间简报.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "纳瓦尔宝典"
+              "title": "2026-08-24晨间简报"
             }
           },
           {
-            "id": "5de0ac1c79d54dca",
+            "id": "50e29e39b6390ab6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/zh/posts/books/财政政策与货币政策.md",
+                "file": "src/zh/posts/finance/汇率.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "财政政策与货币政策"
+              "title": "汇率"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -96,7 +126,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "superpow",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,7 +151,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 271.5
   },
   "right": {
     "id": "9da51a798f87b630",
@@ -251,7 +281,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 389.5
+    "width": 295.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -270,44 +300,46 @@
       "bases:新建数据库": false
     }
   },
-  "active": "ff311e7bd5665592",
+  "active": "3d11d2eabc16fe41",
   "lastOpenFiles": [
-    "src/zh/posts/news/2026年8月3日晨间简报.md",
-    "src/zh/posts/books/纳瓦尔宝典.md",
-    "src/zh/posts/books/财政政策与货币政策.md",
-    "src/zh/posts/books/小岛经济学.md",
+    "src/zh/posts/finance/离岸金融.md",
+    "src/zh/posts/news/2026-08/2026-08-24晨间简报.md",
+    "src/zh/posts/finance/汇率.md",
     "src/zh/posts/books/金钱心理学.md",
-    "src/zh/posts/news/2026-07-29晨间简报.md",
-    "src/zh/posts/news/2026-07-28晨间简报.md",
-    "src/zh/posts/news/2026-07-31晨间简报.md",
-    "src/zh/posts/finance/Call和Put.md",
-    "src/zh/posts/finance/未命名.md",
-    "src/zh/posts/news/2026-07-27晨间简报.md",
-    "src/zh/posts/news/2026-07-23晨间简报.md",
-    "src/zh/posts/news/2026-07-22晨间简报.md",
-    "src/zh/posts/news/2026-07-21晨间简报.md",
-    "src/zh/posts/finance/海力士ADR.md",
-    "src/zh/posts/genesis.md",
-    "src/zh/posts/finance/投资最重要的事.md",
-    "src/zh/posts/news/2026-07-20晨间简报.md",
-    "src/zh/posts/news/2026-07-17晨间简报.md",
-    "src/zh/posts/news/2026-07-16晨间简报.md",
-    "src/zh/posts/news/2026-07-15晨间简报.md",
+    "src/zh/posts/cmb/concept.md",
+    "src/zh/posts/cmb/分期业务.md",
+    "src/zh/posts/algo/数组.md",
+    "src/zh/posts/cmb/kafka.md",
+    "src/zh/intro.md",
+    "src/zh/posts/kafka/intro.md",
+    "src/zh/posts/news/2026-08/2026-08-18晨间简报.md",
+    "copilot/copilot-conversations/Dreams_Agent_Markdown_Enhancement@20260511_212506.md",
+    "src/zh/posts/algo/二叉树.md",
+    "src/zh/posts/books/纳瓦尔宝典.md",
+    "src/zh/posts/finance/美联储历史.md",
+    "src/zh/posts/books/财政政策与货币政策.md",
+    "src/zh/posts/daily/commodities.md",
+    "src/zh/posts/cmb/redis.md",
+    "src/zh/posts/cmb/等额本息和等本等息.md",
+    "src/zh/posts/algo/图.md",
+    "src/posts/algorithm/summary.md",
+    "src/posts/algorithm/21.md",
+    "src/posts/algorithm/1.md",
+    "src/posts/algorithm/8.md",
+    "src/zh/posts/nginx/image.png",
+    "src/zh/README.md",
+    "README.md",
+    "src/zh/posts/news/2026-07",
+    "src/zh/posts/news/untitled folder",
+    "src/zh/posts/news/2026-08",
     "src/zh/posts/books",
-    "src/zh/posts/news/2026-07-14晨间简报.md",
-    "src/zh/posts/news/2026-07-13晨间简报.md",
-    "src/zh/posts/news/2026-07-10晨间简报.md",
     "未命名.base",
-    "src/zh/posts/finance/经济周期.md",
-    "src/zh/posts/cmb/培训.md",
     "src/zh/posts/news",
     "src/zh/posts/finance/未命名",
     "Excalidraw",
     "Pasted image 20260621214843.png",
     "未命名 1.base",
     "copilot/copilot-conversations",
-    "copilot/copilot-custom-prompts",
-    "copilot",
     "未命名.canvas"
   ]
 }
