@@ -7,6 +7,8 @@ tag:
   - Notes
 ---
 
+# 04-LangGraph中断与工具与部署
+
 # 8. 中断
 
 **`LangGraph`** 提供了两种中断机制：

@@ -22,8 +22,93 @@
               "icon": "lucide-file",
               "title": "分期业务"
             }
+          },
+          {
+            "id": "0530de946fcb4875",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/zh/posts/agentdev/01-LangGraph基础入门.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "01-LangGraph基础入门"
+            }
+          },
+          {
+            "id": "99b5c97624f69bb4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/zh/posts/agentdev/02-LangGraph控制流与节点执行.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "02-LangGraph控制流与节点执行"
+            }
+          },
+          {
+            "id": "06411c1dda518fb6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/zh/posts/agentdev/03-LangGraph持久化与记忆管理.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "03-LangGraph持久化与记忆管理"
+            }
+          },
+          {
+            "id": "7ca5417cec4d96ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/zh/posts/agentdev/04-LangGraph中断与工具与部署.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "04-LangGraph中断与工具与部署"
+            }
+          },
+          {
+            "id": "f6c8207b1dee0cc0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/zh/posts/agentdev/05-LangGraph高级特性.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "05-LangGraph高级特性"
+            }
+          },
+          {
+            "id": "e6a5a3377479066a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/zh/posts/agentdev/05-LangGraph高级特性_backup.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "05-LangGraph高级特性_backup"
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -116,13 +201,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/zh/posts/news/2026-07-21晨间简报.md",
+                "file": "src/zh/posts/agentdev/05-LangGraph高级特性_backup.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2026-07-21晨间简报 的大纲"
+              "title": "05-LangGraph高级特性_backup 的大纲"
             }
           },
           {
@@ -229,15 +314,16 @@
       "bases:新建数据库": false
     }
   },
-  "active": "0e8e87253bc54b8b",
+  "active": "8186deae88aa5e69",
   "lastOpenFiles": [
-    "src/zh/posts/agentdev/02-LangGraph控制流与节点执行.md",
-    "src/zh/posts/agentdev/05-LangGraph高级特性_backup.md",
-    "src/zh/posts/agentdev/LangGraph Human-in-the-Loop（HITL）底层原理.md",
-    "src/zh/posts/agentdev/01-LangGraph基础入门.md",
     "src/zh/posts/agentdev/05-LangGraph高级特性.md",
-    "src/zh/posts/agentdev/03-LangGraph持久化与记忆管理.md",
+    "src/zh/posts/agentdev/05-LangGraph高级特性_backup.md",
     "src/zh/posts/agentdev/04-LangGraph中断与工具与部署.md",
+    "src/zh/posts/agentdev/03-LangGraph持久化与记忆管理.md",
+    "src/zh/posts/agentdev/02-LangGraph控制流与节点执行.md",
+    "src/zh/posts/agentdev/01-LangGraph基础入门.md",
+    "src/zh/posts/cmb/分期业务.md",
+    "src/zh/posts/agentdev/LangGraph Human-in-the-Loop（HITL）底层原理.md",
     "src/zh/posts/daily/SFT.md",
     "src/zh/posts/daily/Graph RAG.md",
     "src/zh/posts/agentdev/00-环境配置.md",
@@ -257,7 +343,6 @@
     "src/zh/posts/daily/kv-cache.md",
     "src/zh/posts/algo/二叉树.md",
     "src/zh/posts/algo/动态规划.md",
-    "src/zh/posts/cmb/分期业务.md",
     "src/zh/intro.md",
     "src/zh/posts/agentdev",
     "src/README.md",
