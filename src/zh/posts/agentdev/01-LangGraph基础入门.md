@@ -1,3 +1,12 @@
+---
+icon: pen-to-square
+date: 2026-09-20
+category:
+  - Learning Records
+tag:
+  - Notes
+---
+
 # 1. LangGraph总览
 
 LangGraph 运行时底层基于自研的 Pregel 运行时，其核心思想借鉴了 Google Pregel 计算模型，用于组织和执行复杂的图计算流程。

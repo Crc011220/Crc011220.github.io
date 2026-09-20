@@ -1,3 +1,12 @@
+---
+icon: pen-to-square
+date: 2026-09-20
+category:
+  - Learning Records
+tag:
+  - Notes
+---
+
 # 8. 中断
 
 **`LangGraph`** 提供了两种中断机制：

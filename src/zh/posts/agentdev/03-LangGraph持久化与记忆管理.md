@@ -1,3 +1,12 @@
+---
+icon: pen-to-square
+date: 2026-09-20
+category:
+  - Learning Records
+tag:
+  - Notes
+---
+
 # 6. 持久化机制和可恢复执行
 
 ## 6.1. 概述

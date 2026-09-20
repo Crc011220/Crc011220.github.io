@@ -22,51 +22,8 @@
               "icon": "lucide-file",
               "title": "分期业务"
             }
-          },
-          {
-            "id": "9ab3ec66928f4836",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/zh/posts/agentdev/01-LangGraph基础入门.md",
-                "mode": "preview",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "01-LangGraph基础入门"
-            }
-          },
-          {
-            "id": "12c027650c4ff98c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/zh/posts/daily/SFT.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "SFT"
-            }
-          },
-          {
-            "id": "560b733623a918b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/zh/posts/daily/Graph RAG.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Graph RAG"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 473.5
   },
   "right": {
     "id": "9da51a798f87b630",
@@ -272,14 +229,18 @@
       "bases:新建数据库": false
     }
   },
-  "active": "12c027650c4ff98c",
+  "active": "0e8e87253bc54b8b",
   "lastOpenFiles": [
-    "src/zh/posts/daily/Graph RAG.md",
-    "src/zh/posts/daily/SFT.md",
-    "src/zh/posts/agentdev/01-LangGraph基础入门.md",
-    "src/zh/posts/agentdev/00-环境配置.md",
-    "src/zh/posts/agentdev/05-LangGraph高级特性.md",
+    "src/zh/posts/agentdev/02-LangGraph控制流与节点执行.md",
+    "src/zh/posts/agentdev/05-LangGraph高级特性_backup.md",
     "src/zh/posts/agentdev/LangGraph Human-in-the-Loop（HITL）底层原理.md",
+    "src/zh/posts/agentdev/01-LangGraph基础入门.md",
+    "src/zh/posts/agentdev/05-LangGraph高级特性.md",
+    "src/zh/posts/agentdev/03-LangGraph持久化与记忆管理.md",
+    "src/zh/posts/agentdev/04-LangGraph中断与工具与部署.md",
+    "src/zh/posts/daily/SFT.md",
+    "src/zh/posts/daily/Graph RAG.md",
+    "src/zh/posts/agentdev/00-环境配置.md",
     "src/zh/posts/agentdev/images/image-20260709174052171.png",
     "src/zh/posts/agentdev/images/image-20260625180419653.png",
     "src/zh/posts/agentdev/images/image-20260625180832289.png",
@@ -291,10 +252,6 @@
     "src/zh/posts/agentdev/images/image-20260625143740875.png",
     "src/zh/posts/agentdev/images/image-20260625143710651.png",
     "src/zh/posts/agentdev/images",
-    "src/zh/posts/agentdev/05-LangGraph高级特性_backup.md",
-    "src/zh/posts/agentdev/04-LangGraph中断与工具与部署.md",
-    "src/zh/posts/agentdev/03-LangGraph持久化与记忆管理.md",
-    "src/zh/posts/agentdev/02-LangGraph控制流与节点执行.md",
     "src/zh/posts/agentdev/Pi Agent.md",
     "src/posts/genesis.md",
     "src/zh/posts/daily/kv-cache.md",

@@ -1,3 +1,12 @@
+---
+icon: pen-to-square
+date: 2026-09-20
+category:
+  - Learning Records
+tag:
+  - Notes
+---
+
 # 4. 控制流
 
 ## 4.1. 顺序结构
