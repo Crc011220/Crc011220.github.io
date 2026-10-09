@@ -24,69 +24,13 @@
             }
           },
           {
-            "id": "0530de946fcb4875",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/zh/posts/agentdev/01-LangGraph基础入门.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "01-LangGraph基础入门"
-            }
-          },
-          {
-            "id": "99b5c97624f69bb4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/zh/posts/agentdev/02-LangGraph控制流与节点执行.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "02-LangGraph控制流与节点执行"
-            }
-          },
-          {
-            "id": "06411c1dda518fb6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/zh/posts/agentdev/03-LangGraph持久化与记忆管理.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "03-LangGraph持久化与记忆管理"
-            }
-          },
-          {
-            "id": "7ca5417cec4d96ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "src/zh/posts/agentdev/04-LangGraph中断与工具与部署.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "04-LangGraph中断与工具与部署"
-            }
-          },
-          {
-            "id": "f6c8207b1dee0cc0",
+            "id": "9e1f019a95c47f50",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "src/zh/posts/agentdev/05-LangGraph高级特性.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
@@ -94,21 +38,77 @@
             }
           },
           {
-            "id": "e6a5a3377479066a",
+            "id": "bdfba7f5bb30669c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/zh/posts/agentdev/05-LangGraph高级特性_backup.md",
+                "file": "src/zh/posts/agentdev/04-LangGraph中断与工具与部署.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "04-LangGraph中断与工具与部署"
+            }
+          },
+          {
+            "id": "4a16b80aceaec925",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/zh/posts/daily/Swift.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "05-LangGraph高级特性_backup"
+              "title": "Swift"
+            }
+          },
+          {
+            "id": "c0f98437f21aa1aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/zh/posts/daily/Transformer分支脉络.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Transformer分支脉络"
+            }
+          },
+          {
+            "id": "538031fe71aee090",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/zh/posts/daily/Jev.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Jev"
+            }
+          },
+          {
+            "id": "c92e93d32c0b8808",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/zh/posts/daily/五大关系.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "五大关系"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -128,7 +128,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byModifiedTime",
-                "autoReveal": true
+                "autoReveal": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -140,7 +142,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sft",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -165,7 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 473.5
+    "width": 305.328125
   },
   "right": {
     "id": "9da51a798f87b630",
@@ -201,23 +203,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/zh/posts/agentdev/05-LangGraph高级特性_backup.md",
+                "file": "src/zh/posts/agentdev/05-LangGraph高级特性.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "05-LangGraph高级特性_backup 的大纲"
-            }
-          },
-          {
-            "id": "493279fe90da42e1",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "title": "大纲"
             }
           },
           {
@@ -242,6 +234,16 @@
               },
               "icon": "lucide-archive",
               "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "493279fe90da42e1",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -295,7 +297,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 295.5
+    "width": 321.98828125
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -316,15 +318,22 @@
   },
   "active": "8186deae88aa5e69",
   "lastOpenFiles": [
-    "src/zh/posts/agentdev/05-LangGraph高级特性.md",
-    "src/zh/posts/agentdev/05-LangGraph高级特性_backup.md",
+    "src/zh/posts/daily/Jev.md",
+    "src/zh/posts/daily/Transformer分支脉络.md",
+    "src/zh/posts/daily/Swift.md",
+    "src/zh/posts/daily/五大关系.md",
     "src/zh/posts/agentdev/04-LangGraph中断与工具与部署.md",
-    "src/zh/posts/agentdev/03-LangGraph持久化与记忆管理.md",
-    "src/zh/posts/agentdev/02-LangGraph控制流与节点执行.md",
-    "src/zh/posts/agentdev/01-LangGraph基础入门.md",
+    "src/zh/posts/agentdev/05-LangGraph高级特性.md",
     "src/zh/posts/cmb/分期业务.md",
+    "src/zh/posts/agentdev/02-LangGraph控制流与节点执行.md",
     "src/zh/posts/agentdev/LangGraph Human-in-the-Loop（HITL）底层原理.md",
+    "src/zh/posts/agentdev/05-LangGraph高级特性_backup.md",
+    "src/zh/posts/agentdev/03-LangGraph持久化与记忆管理.md",
     "src/zh/posts/daily/SFT.md",
+    "src/zh/posts/algo/贪心.md",
+    "src/zh/posts/algo/栈和队列.md",
+    "src/zh/posts/algo/二叉树.md",
+    "src/zh/posts/agentdev/01-LangGraph基础入门.md",
     "src/zh/posts/daily/Graph RAG.md",
     "src/zh/posts/agentdev/00-环境配置.md",
     "src/zh/posts/agentdev/images/image-20260709174052171.png",
@@ -341,19 +350,12 @@
     "src/zh/posts/agentdev/Pi Agent.md",
     "src/posts/genesis.md",
     "src/zh/posts/daily/kv-cache.md",
-    "src/zh/posts/algo/二叉树.md",
     "src/zh/posts/algo/动态规划.md",
     "src/zh/intro.md",
     "src/zh/posts/agentdev",
     "src/README.md",
     "src/zh/posts/books/博弈论.md",
     "src/zh/posts/cmb/课题.md",
-    "src/zh/posts/daily/LLM-wiki.md",
-    "src/zh/posts/daily/泊松过程.md",
-    "src/zh/posts/cmb/concept.md",
-    "src/zh/posts/books/纳瓦尔宝典.md",
-    "src/zh/posts/books/金钱心理学.md",
-    "src/zh/posts/books/就业、利息和货币通论.md",
     "src/zh/posts/news/2026-07",
     "src/zh/posts/news/untitled folder",
     "src/zh/posts/news/2026-08",
